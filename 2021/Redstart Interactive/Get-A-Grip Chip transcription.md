@@ -46,7 +46,13 @@ Vicky Wei
 the decision was Apple two honestly like many great startup business things was definitely one of those businesses. So we took paths.
 
 Jonas Rosland  
-So, when did you when did you start the development here on Get a grip chip. Oh, really. Yeah, yeah. That's quick.
+So, when did you when did you start the development here on Get a grip chip. 
+
+Vicky Wei
+January 2020.
+
+Jonas Rosland  
+Oh, really. Yeah, yeah. That's quick.
 
 Jon Lawitts  
 So yeah, the whole production. It's maybe a little gray. Yeah, exactly, exactly it's but the whole production was about nine months, obviously you're still working on things for it so we're counting but we had a couple of rounds, we've been working on for that. And ultimately we decided that we wanted to move forward with this one. And so yeah, once we made. January. So an interesting time to be starting a project. Yeah. Monster so,
