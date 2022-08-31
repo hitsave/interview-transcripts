@@ -1,4 +1,4 @@
-# Transcript of interview with Matthew Brelson, creator of Betty & Earl
+# Transcript of interview with Matthew Brelsford, creator of Betty & Earl
 
 ## Details
 
