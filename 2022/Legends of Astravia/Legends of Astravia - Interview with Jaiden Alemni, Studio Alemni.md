@@ -3,7 +3,9 @@
 ## Details
 
 Interview took place on April 19, 2022. Interviewer is Jonas Rosland.
-Full interview available at https://www.youtube.com/watch?v=tX0NNzZ1fIU.
+
+Full interview available at https://www.youtube.com/watch?v=tAnbwP7eHqk.
+
 Transcription is provided by https://otter.ai.
 
 ## Transcript
