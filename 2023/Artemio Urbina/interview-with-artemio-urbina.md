@@ -38,7 +38,7 @@ And you taking all that time to deal with all this stuff is really, really humbl
 Thank you very much.
 
 01:13.080 --> 01:21.000
-So you are the creator behind the 240p test suite MD4 year.
+So you are the creator behind the 240p Test Suite, MD Fourier.
 
 01:21.920 --> 01:29.640
 You're a part of the team that made the CPS2 de-suicide function.
@@ -2057,7 +2057,7 @@ I love that.
 I want to dive into the other open source project that you are currently working on.
 
 01:02:29.520 --> 01:02:31.520
-MD4 here.
+MD Fourier.
 
 01:02:31.520 --> 01:02:34.520
 So tell us a bit about this.
@@ -2726,7 +2726,7 @@ I love it.
 Yeah.
 
 01:14:08.520 --> 01:14:13.520
-So I had to implement something in MD4EA to compensate for this, okay?
+So I had to implement something in MD Fourier to compensate for this, okay?
 
 01:14:13.520 --> 01:14:17.520
 Because no Super Nintendo that we ever recorded matched it, not even against
@@ -2828,7 +2828,7 @@ Human voice is on the center right part of that graph.
 So you have an idea of frequency range.
 
 01:16:10.520 --> 01:16:16.520
-And the default of MD4E is to graph based on standard or normalized human
+And the default of MD Fourier is to graph based on standard or normalized human
 
 01:16:16.520 --> 01:16:18.520
 hearing.
@@ -3002,10 +3002,10 @@ Either we...
 I do have it now, but I've not published it.
 
 01:19:51.520 --> 01:19:54.520
-Neo Geo, this version of the suite, does have MD4A.
+Neo Geo, this version of the suite, does have MD Fourier.
 
 01:19:54.520 --> 01:19:57.520
-Every version of the suite includes MD4A.
+Every version of the suite includes MD Fourier.
 
 01:19:57.520 --> 01:20:05.520
 Yeah, so we have it for MBS, AES, Neo Geo CD, X68000, and the Irem M92 arcade PCB.
@@ -3041,7 +3041,7 @@ So it's public. You can use it.
 But we don't have hundreds of recordings, maybe tens of recordings, to compare systems against and have a proper analysis.
 
 01:20:45.520 --> 01:20:55.520
-In the original MD4A documentation, I tried to use the Sega Genesis as a test case scenario of what you can do, right?
+In the original MD Fourier documentation, I tried to use the Sega Genesis as a test case scenario of what you can do, right?
 
 01:20:55.520 --> 01:21:12.520
 And since I have like 20 systems, I could compare and change and contrast how a Model 2 changes, how a Model 1 version 6 changes, how placing a Sega CD changes the signal or not, how a CDX does things different, mixes channels different.
