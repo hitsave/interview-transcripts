@@ -1,0 +1,754 @@
+start	end	text
+43810	47850	Hello everyone and welcome to yet another Hit Save podcast.
+48350	54570	I'm here with Rick Nickel of Good Boy Galaxy and you just saw the Good Boy Galaxy trailer
+54570	57590	that just came out like two weeks ago here.
+58110	59090	The latest one.
+59710	61910	It's really, really fun.
+63010	64610	Really fun game, first of all.
+64850	66230	Super cool trailer.
+66230	68410	And I love the music.
+68650	69410	So hi Rick.
+69670	70450	Hi Rick.
+70650	72290	Do you want to introduce yourself?
+73410	73890	Yeah.
+73970	76390	Hi, I'm Rick from Good Boy Galaxy.
+77810	80590	And yeah, I'm more on the creative side.
+81270	87030	And with my friend Jeremy, we've been working on Good Boy Galaxy for the past couple of
+87030	87270	years.
+88190	90510	So tell me a bit about Good Boy Galaxy.
+90710	91630	What is it?
+93110	96950	So it's a exploration-based platform game.
+97190	101010	I'm a bit hesitant to call it a Metroidvania because I don't think it really checks all
+101010	101430	the boxes.
+103050	106170	But it's kind of in the same vein a little bit.
+107610	111190	And yeah, it's a platform adventure game for the Game Boy Advance.
+112450	119230	So a new game for the Game Boy Advance being made in this year of 2023.
+119230	123310	What made you think of this?
+123590	127490	What made you go into making a Game Boy game in 2023?
+127950	129630	Or even a few years earlier?
+130470	130790	Yeah.
+131650	136810	Well, we started it as a game jam project.
+136950	141010	So it was just a small weekend project.
+141010	149050	And I think it was for the Ludum Dare game jam.
+149790	156970	And we just wondered, could we do it in such a short time frame?
+157670	165510	And we just about, to the very last hour, which is game jam tradition, did manage to
+165510	173670	pull off a playable game that had a couple of levels and an end that actually run on
+173670	174850	the Game Boy Advance.
+175110	178090	And of course, that made us overconfident.
+178530	180270	So we thought, it's easy, we can do this.
+182010	186910	And yeah, there was not much prior thought behind it.
+187290	190170	But it just felt like a fun thing to do.
+190630	192670	And it was a fun thing to do.
+192730	194250	We really enjoyed doing it.
+194250	197110	And the Game Boy Advance is just super special to us.
+197370	199690	So it felt right.
+200290	206650	And also with the kind of gratuitous, it was the 20th anniversary of the Game Boy Advance
+206650	207290	just recently.
+207530	209290	So it kind of lined up with that as well.
+209390	212930	So everything just kind of seemed in alignment at the time.
+214350	215970	But there wasn't really a special reason.
+216070	217770	It was just kind of, we thought it was fun.
+217990	218830	We thought it was interesting.
+218830	226330	And we didn't run into any very difficult obstacles that made us give up.
+226570	228130	So that's the reason, really.
+229510	230090	Awesome.
+230410	236550	So I want to show the picture here is of a GBA running your game.
+236930	239390	And this is my favorite form factor of the GBA.
+239510	242850	I know a lot of people will maybe disagree.
+243030	248810	But I think this is just a fantastic, iconic, handheld console.
+251090	257110	The amount of effort that you put into the game, as I was playing the beta release that
+257110	260090	you sent over to us, thank you so much for providing that.
+260910	265570	I was just amazed by the animations, the artwork.
+265890	267130	It's so colorful.
+268890	271250	It's really, really fun to play.
+271570	277990	And as you said, exploratory, just exploring the different areas and going back and trying
+277990	280610	new, different things, dying a lot.
+282150	283790	It's just so much fun.
+284590	290250	So how did you get into this?
+290430	293610	What's your background in game development?
+293850	297570	And how did you get to where you are right now developing this?
+298230	299670	Because it's a very polished game.
+300770	301470	Thank you very much.
+302750	309690	So I guess earlier in my career, I was working in web development and a bit of print design.
+311050	318650	But I was always doing kind of small freelance things or hobby things, mainly pixel art for
+319370	321710	mobile games and stuff like that.
+323030	325830	So that was my background.
+325830	335090	And then a few years ago, six years ago, I moved to the Netherlands to work at a mobile
+335090	336950	game studio called Lucky Cat.
+338610	340490	And that's where I met Jeremy.
+341310	346250	So we had a few years, a couple of years working together there, too.
+348190	360710	And I think it's really when I developed my skill set a bit more because we were doing
+360710	364910	like 40 something prototypes a year.
+365270	368610	Like it's a crazy amount of projects.
+369310	373310	So it was just like nonstop learning.
+373970	376230	And yeah, that's how I got into it.
+376230	378270	And that's where I met Jeremy.
+378370	381570	He's also from England, but we both met in the Netherlands.
+383350	386330	Just a short jump over the puddle.
+387310	388650	Yeah, very short.
+390310	392250	They're surprisingly similar countries.
+393230	400130	But yeah, we did a couple of game jams in the weekends.
+400570	402610	And yeah, this was one of them.
+404010	410630	You said you did about 40 projects a year plus game jams during the weekend.
+410990	411070	Yeah.
+411670	416590	That sounds like a lot of innovation, a lot of trying new things.
+417270	426570	Yeah, it is kind of, it's like a, it's something that you practice and kind of get good at.
+426570	434730	But I'm hesitant to call it its own skill because actually the skill is just,
+436810	444030	it's kind of like just accepting the idea that comes to you and just doing it and not interrogating it too much.
+445830	449450	And then you discover things along the way.
+449450	456530	But yeah, that's definitely had a relatively big part in this project coming about.
+457210	468050	What were some of the other game jam projects that you tried out but didn't feel like it had legs to stand on its own, such as Good Boy Galaxy?
+469050	478750	The one other game jam that I did with Jeremy was, it was called Super Bike Strike.
+479710	481070	Super Bike Strike?
+481810	485710	Yeah, it was kind of like a side-scrolling shoot-em-up.
+486690	495110	But the interesting thing was you'd jump from your ship, which is actually a hover bike,
+496030	501790	and then you'd land on the other person's bike and like punch them off.
+503390	507810	And then their bike would like fall down and smash into other bikes.
+507910	509370	So you could have quite a chain reaction.
+510430	518370	And there was like a bit of a double jump to save you from just immediately falling down.
+519590	526190	It's that little bit of gameplay, the bit where you jump and attack,
+527530	532650	is super satisfying when you actually land on the bike, that you intend to.
+535190	536750	But we did run into some trouble.
+536870	539690	It's actually a little bit more difficult than you want it to be.
+539690	548870	And one of the caveats to the difficulty is the game is actually more difficult
+548870	553290	the fewer enemies are around, which is actually inverse what you expect.
+554670	559630	But it also ramps up the challenge in other ways that way, because you've got more people shooting at you.
+559990	562930	So it's very difficult to get the balance right.
+566370	571370	And to get the game feel to good, it had to be quite fast and quite zoomed in.
+571450	574710	But that also made it more difficult to land where you want.
+575650	582110	And I think the idea's got legs, but I think it'd have to be done maybe in 3D or something
+582110	586250	to make it a bit more user-friendly, I guess.
+586470	590970	But yeah, that's the previous game jam that we did before Good Boy.
+590970	594650	That sounds really cool too. I would love to try that out.
+595510	596670	I'll send you a link afterwards.
+597350	597890	Fantastic.
+599390	605350	So Good Boy Galaxy was thought up as a game jam project during a weekend.
+606370	609870	How did you go about after the game jam?
+610010	612490	What was your thought process like?
+613170	615930	Like, okay, maybe we should do something here.
+616470	618470	How did you go about actually doing something?
+618470	622590	You ran a Kickstarter. I definitely want to dive into that as well.
+624250	629390	Yeah, so we didn't really think about the Kickstarter for quite a long time.
+629570	635290	We were just working on it a weekend a month or something, just here and there.
+637230	642870	And then I think it's when COVID hit, everyone was working from home
+642870	645350	and suddenly had their commute time.
+645350	652690	And there was less to do.
+652990	655850	So we got more done.
+656310	662150	And that's when we were getting the demo that ended up launching the Kickstarter.
+665370	671310	So yeah, we got the demo ready.
+671310	678530	And then we just decided to make it a full...
+678530	682950	At that point, it was quite obvious that it was worth pursuing.
+683430	688530	But when it was just the game jam version, it was just a little side hobby.
+688650	690150	It wasn't that interesting.
+690410	693730	But at the point when the demo was taking shape
+693730	696670	is when we decided to take it to Kickstarter.
+697950	702890	So what was your experience with Kickstarter?
+711550	718050	We'd partnered with First Press to publish the physical copies
+719890	723350	before we did the Kickstarter.
+723350	727170	And they'd done a few other Kickstarters before.
+727410	730250	So we kind of knew a little bit what to expect.
+733430	740790	So yeah, basically, the deal was we had a limited amount that we could sell.
+741570	745790	And then basically, we didn't really have to pay for it.
+745810	747130	It was kind of like an advance.
+747870	749290	So that's why it's limited.
+749510	753410	So that it's safe for all parties.
+755630	758890	But of course, we blew through the whole thing in the first day,
+758950	760470	which nobody really expected.
+761870	764630	And then people were angry about it.
+764850	769590	And we were kind of unprepared for it.
+769630	771750	So it's a bit stressful, to be honest.
+772230	773750	And of course, we're both still working.
+773750	776710	We kind of wanted, or we kind of expected,
+777090	781670	it to be a bit of a continuation of a side Hollywood project.
+782150	786410	But when you have a Kickstarter that successful,
+788750	793430	you're kind of responsible to fulfil your biggest promises.
+794350	799890	So it was kind of a mix, mixed emotions.
+800190	803390	I was also finding it difficult to sleep with all that going on.
+803390	810670	So it's like heightening the emotions of the excitement and the stress.
+811370	817650	But I mean, it was definitely a very overall positive experience.
+817970	824290	And it was definitely super grateful for everyone that's backed the project
+824290	830790	and given us this opportunity to make the game exactly as we really want to.
+830790	833990	And not just cutting corners and doing it here and there.
+835370	840730	So yeah, hopefully they're happy with their decision
+840730	842690	when they finally get to play the game.
+843930	846530	Yeah, what I've seen so far from the game,
+846590	850610	I definitely think that people are going to be very, very happy with the end result.
+850870	857110	Again, I am amazed by the animation, the colour.
+857110	861030	It pops, it really, really pops.
+861450	864790	The music is really solid.
+865950	869150	So what is your role within the game?
+869170	871330	And what's Jeremy's role in the game?
+872410	877990	Yeah, so I guess the trouble is we both do a bit of everything.
+878390	884770	But from my side, it's mainly creative stuff, all the art and animation.
+886110	890330	And a lot of the game design, I guess, comes from my side.
+890590	894930	And then from Jeremy's side, he's like the technical guy.
+895110	904270	He's set up the project, all the programming, his remit.
+905850	908970	And making sure it compiles, fixing bugs,
+909790	914290	tracking down the most esoteric thing that you can possibly imagine
+914290	915750	in the Game Boy Advance's hardware.
+917370	920230	But yeah, there's definitely some overlap.
+920450	924710	I've also done a lot of coding myself,
+924890	928530	like a lot of the fancy effects in the backgrounds
+928530	930610	and all the quests and stuff.
+930810	933470	A lot of that's me. Sometimes it has to be fixed.
+935510	938630	And then music, we've both kind of done.
+938630	945190	Also Vincent Perger, aka Tui, did a lot of the music in the game.
+947850	952330	But yeah, me and Jeremy both like doing music too.
+952430	954390	So we've both had a hand in that.
+955110	957510	And then level design, we've also both done.
+957830	962730	We have slightly different philosophies when it comes to level design.
+962730	972750	So Jeremy makes the most clever and cruel Mario Maker levels
+972750	975430	that you've ever played and that are very difficult,
+975710	978210	but very clever mechanically.
+978890	989410	And from my design background and from all the time working on mobile games,
+989410	994530	I've very much got the mindset of simplification,
+995190	997070	making everything move.
+999630	1001250	So it's interesting.
+1001530	1003830	We've worked collaboratively on the levels
+1003830	1007110	and we're both making passives over each other's work
+1007530	1010730	until eventually we've got something that's...
+1011470	1014050	We like to think of it as a bit of cake and eating it too,
+1014150	1015970	because we've got the clever ideas,
+1015970	1019950	but hopefully there's less frustration.
+1020770	1023790	I don't want to sound the corners off completely,
+1023990	1029510	but we've tried to make it so that there's no showstoppers
+1029510	1031570	if you get completely stuck.
+1033630	1035650	But yeah, that's where we're at.
+1036290	1039210	You mentioned that there are some quirks
+1039210	1042110	when it comes to programming for the GBA.
+1042110	1047610	What are some challenges that you have met and overcome,
+1047750	1048850	or at least tried to overcome?
+1052430	1056890	It's a relatively advanced...
+1057430	1058610	You'll forgive the pun.
+1062130	1068570	It's got the feeling like it's a SNES or a Mega Drive or a Genesis,
+1068570	1072390	but it's actually a lot more powerful.
+1072710	1076190	So it's a lot freer than you'd imagine,
+1076950	1078590	or you might imagine it would be,
+1078750	1082270	but there's still some tight restrictions.
+1084970	1087270	There's only a finite amount of layers.
+1087430	1090230	There's only four layers, I think.
+1090230	1100330	And we work in four bits per pixel, I think,
+1100590	1105690	which is 15 colours per spline or per tile.
+1108650	1112630	Yeah, there's a lot of clever tricks
+1112630	1115270	to try and get the absolute most out of it.
+1115450	1116550	Like with the layers,
+1116550	1120180	sometimes we split them into sections
+1121350	1124790	so that we can scroll one layer at different speeds,
+1124830	1126390	depending on where it is,
+1126610	1128870	to get the feeling of more depth
+1128870	1133870	and constantly running a lot of...
+1134710	1139510	So from the art side, I really want to make the levels feel unique
+1139510	1143250	and have lots of areas within them
+1143250	1148030	that feel not quite set piece,
+1148170	1150710	but at least so you know where you are,
+1150750	1155830	because you can go through the level in several different ways.
+1155890	1158050	It's important to have landmarks,
+1159090	1163690	but that's expensive when you can only have so many tiles in memory.
+1165010	1168550	So we went through incredible lengths
+1168550	1172670	of automatically figuring out
+1172670	1176710	which tiles are similar enough to be collapsed into one tile.
+1177970	1179870	We can keep them...
+1180570	1186970	We can flip and mirrored versions of the tiles
+1186970	1188510	don't count as an extra tile.
+1188670	1191890	So we have lots of clever use of that.
+1193110	1193650	That's smart.
+1194330	1197970	Yeah, there's so many really...
+1199890	1203790	quite arduous tasks that end up just shaving enough off
+1203790	1206410	that you can do what you actually wanted to do in the first place,
+1206550	1212010	which is super important on the low-end consoles.
+1212290	1214330	But obviously when we do the switch port,
+1214430	1215510	which we're just starting now,
+1216610	1220950	it's probably all this stuff is no longer necessary.
+1220950	1226170	But it was fun, little puzzles to figure out.
+1226590	1227910	So I enjoyed it anyway.
+1229030	1229550	That's awesome.
+1230490	1235390	So we've gone quite deep into the technical weeds already.
+1235690	1237670	So I want to bring us back up a bit
+1238270	1241190	and talk about the game itself
+1241190	1245650	and the story in the game, the characters.
+1246050	1250070	So tell us a bit about who you are as a player
+1250070	1253190	and what the mission is, the story is.
+1253710	1256770	Okay. So the background of the game
+1256770	1263170	or the overarching story is that you're this dog
+1263170	1264390	named Maxwell.
+1265730	1267530	He's not a dog from Earth.
+1267610	1270230	He's a dog from the dog galaxy, obviously.
+1271850	1278570	And his system or his planet is dying
+1278570	1283050	or collapsing or in trouble.
+1284330	1287670	So being the good boy that he is,
+1287750	1294750	he takes it on himself to use his hyperdrive
+1294750	1297410	to blast to a whole new system
+1297410	1301450	with no idea if he's going to find anything
+1301450	1305150	or find advanced civilization that could help him.
+1307570	1309270	It's a big risk, basically.
+1309910	1313330	So he goes ahead and does that.
+1313510	1316170	And then he has to use every single jump
+1316170	1318690	at his availability.
+1319050	1323070	So now he's completely stranded in this new galaxy.
+1323230	1329630	But he has found life, civilization and such.
+1330050	1333530	But yeah, so it's his job now to figure out a way home
+1333530	1337550	and also figure out if there's someone
+1337550	1340210	that can actually help him in his original mission.
+1341810	1345470	Yeah, the reason we did it like this is we wanted
+1348630	1354750	to really emphasize exploration and discovery,
+1354970	1355790	I guess is the right word.
+1356850	1361510	So having Maxwell also be discovering this at the same time
+1361510	1364890	as the player made the most sense to us.
+1366870	1373270	One of our mantras when deciding and designing the worlds
+1373270	1375770	and stuff was the word surprise.
+1376990	1383150	So we really wanted there to be unexpected things
+1383150	1385670	to find when you're exploring stuff.
+1386250	1389810	And the best way we felt to go about that was
+1389810	1394670	to make everything unexpected in the sense that it's all alien
+1394670	1398290	to you, the player, and also to the character
+1398290	1399130	that you're playing as.
+1401890	1407090	The exploration, I mentioned earlier here that I died a lot.
+1407830	1410510	But it doesn't feel punishing.
+1411070	1415690	It's more like, yes, I know why I perished here.
+1417130	1419610	Because I was doing something that I shouldn't.
+1420330	1423690	So then I try again, and I die, and I try again, and I die.
+1423790	1428230	And then eventually I figure out, oh, no, wait, this is the way I'm going about this.
+1429710	1435650	I really like the quick return
+1436850	1439350	to where you were so you can try it again.
+1441730	1445490	It's a very forgiving gameplay, I would say,
+1445590	1447990	even though it's hard at times.
+1448190	1449130	It's very forgiving.
+1449730	1451250	And it's super, super fun.
+1453870	1459490	I love the interactions
+1459490	1462830	between the good boy here, Maxwell,
+1463530	1465650	and the characters that he meets.
+1466010	1467210	Because it's super funny.
+1468310	1470170	It's really well written.
+1471290	1475670	I think it's on the second world.
+1477050	1481330	I don't want to spoil the surprise, but you get locked in
+1481330	1483570	a little for a bit.
+1484010	1485830	And I was not prepared for that at all.
+1485930	1488770	I was like, oh, wait, this is very different.
+1490130	1491970	And you have to fight your way out.
+1492670	1494330	It's really, really fun.
+1494330	1500330	And I love that, as you said, the environment is alien.
+1500490	1503750	So you're exploring as well as Maxwell
+1503750	1507710	and just finding things out and learning about the environment.
+1508850	1510210	It's super, super fun.
+1512330	1512910	Thank you very much.
+1513610	1518910	So you said you go off the theme of surprise.
+1520330	1523050	So how do you plan for surprises?
+1526530	1528070	It's a good question.
+1528310	1530510	I think surprise is maybe too strong a word.
+1530770	1532890	But it's what we told ourselves.
+1533190	1535350	So we ask with it.
+1535530	1535930	I like it.
+1538550	1542550	I think, yeah, how we dealt with this
+1542550	1545550	was mainly me and my friend Andreas.
+1547470	1550650	And Andreas is a guy that I met in London
+1551190	1552310	when I lived there.
+1552310	1557070	And he's this super chill dude.
+1557270	1559850	And he's super creative.
+1560630	1564470	Kind of like Jake the dog from Adventure Time.
+1565210	1568110	So basically we'd have these long chats.
+1568370	1572990	And Andreas was working on concept art with me.
+1573150	1576930	So we were kind of coming up with a lot of these ideas together.
+1577730	1581610	I think if I was coming up with everything on my own,
+1581610	1582390	I don't know.
+1583570	1585890	I couldn't really surprise myself.
+1586230	1588690	Or I couldn't really have that sense of wonder.
+1588890	1589870	So when we were collaborating,
+1590050	1593250	it was super important because I knew what was
+1593840	1598190	what would grab my sense of wonder
+1598190	1599030	or my attention.
+1599690	1604930	And we'd figure out a way to combine our ideas
+1604930	1606290	and workshop things.
+1607190	1609210	So yeah, we basically just had
+1610950	1613910	just conversations where we were talking about
+1614610	1617330	broad ideas and then just
+1618390	1620350	going away, sketching things out,
+1621850	1624990	coming up with random...
+1624990	1626450	Sometimes it would be a visual design
+1626450	1629210	and then we'd come up with the lore behind it.
+1629610	1632870	And sometimes it'd be we had a vague idea
+1632870	1635410	of what kind of a character
+1635410	1638930	and then one of us would go and draw it
+1638930	1641050	and then we'd develop it a bit more.
+1641610	1644810	But yeah, I think there was a bit of back and forth
+1644810	1647010	between us that really...
+1647010	1650350	That's basically how we planned for Surprise,
+1650470	1651850	was by surprising each other.
+1652790	1654430	I think that's a really good method.
+1656150	1658130	It seems to have worked really well.
+1658990	1660970	I definitely was surprised
+1661990	1664250	by the piece that I'm playing,
+1664510	1665870	the parts that I've been playing.
+1666370	1668890	And yeah, it's just, again, super, super fun.
+1669870	1673750	So how did you get into game development?
+1673970	1677290	What was it that drove you to start
+1677950	1681110	with game development all these years ago?
+1683850	1687710	Yes, I guess I was always kind of
+1688870	1690230	interested in it.
+1692290	1697070	I grew up with like an 8-bit Atari.
+1699970	1701770	And yeah, I just...
+1701770	1705570	I was always sketching ideas for games
+1705570	1708830	and trying my best to program in BASIC.
+1709130	1711510	And yeah, it's been something
+1711510	1716010	that I've been doing for my whole life, basically.
+1716010	1718910	So it's really hard to pinpoint a specific moment.
+1719030	1723730	But I think a lot of those older games,
+1723930	1724990	they're kind of...
+1728810	1734830	They kind of have an alien, otherworldly feel to them
+1734830	1736570	a little bit by accident,
+1736690	1739350	because they often didn't...
+1739350	1742510	It wasn't normal yet to have an artist involved in the game.
+1742610	1745810	So it was abstract to the point of absurdity.
+1745810	1747190	In some cases.
+1747750	1752690	And yeah, it felt something separate to real life.
+1752750	1753890	Whereas games now, obviously,
+1754250	1755410	some of them are very realistic
+1755410	1761810	and feel almost like a movie or a dream or something.
+1762330	1765630	Whereas some of those older games
+1765630	1771210	seemed to be almost like this whole separate thing to reality.
+1771210	1773550	And I think that really...
+1774910	1777590	It really affected my imagination, I guess,
+1777670	1782230	because it just really made you want to fill in the details
+1782230	1785050	and come up with your own other worlds.
+1786490	1792230	So yeah, for me, it's almost like it's been there since day one.
+1792390	1796050	I've just finally gone out on my own
+1796050	1799910	and made something that's more my own
+1799910	1803570	rather than working for hire on other people's projects.
+1804530	1806510	And for Jeremy, I think it's similar.
+1807830	1810370	He grew up with consoles
+1810370	1815110	rather than quite the old-man computers that I had.
+1817370	1820350	And yeah, he's been, like I said,
+1820390	1824630	working on Mario Maker levels and this kind of thing.
+1824830	1828230	So for him, I think it's...
+1828230	1831450	Yeah, I think it's a similar thing.
+1831570	1833690	It's something that we've kind of grown up with,
+1834090	1836590	but just from slightly different perspectives.
+1838030	1838410	Cool.
+1839770	1843550	So, Good Boy Galaxy is coming out for the Game Boy Advance.
+1843950	1845970	You also mentioned Nintendo Switch port.
+1846630	1849010	What else will it be on?
+1850270	1856050	There's an Evercade version that's also announced, I think.
+1858170	1863390	I'm not 100% sure when that one's shipping.
+1864010	1865310	I think it might be December.
+1866930	1870170	So similar time to the Game Boy Advance version.
+1870890	1874550	And then we've got the Switch version and the PC version,
+1874610	1876050	which we're doing now.
+1876630	1879130	We're trying to add a little extra to that.
+1879190	1882970	So we're trying to add some local co-op missions.
+1885350	1887270	So it's going to take a little bit longer,
+1887410	1889850	but hopefully not too much longer.
+1891610	1894150	The Switch one is a bit of a question mark.
+1894610	1900090	I know there's a lot more checks and hoops to jump through.
+1900670	1902630	But hopefully we can get the PC one out
+1902630	1906010	either at the end of the year or sometime early next year.
+1907150	1910630	We've also got the option on the PC to release it
+1910630	1913950	without the extra stuff and then add it later,
+1914270	1916510	which we can't really do that on the Switch
+1916510	1918810	because we're doing physical copies.
+1919550	1923350	And technically we can do that on the Switch,
+1923610	1926770	but I think people really didn't like the idea
+1926770	1929830	of having a cartridge that hasn't got all the content on.
+1931950	1933990	And because it's a niche product,
+1933990	1937390	we're going to have to abide
+1937390	1941990	by people's best wishes on that kind of thing.
+1942070	1943450	And it totally makes sense.
+1945210	1951470	I think that's one of the really cool things about physical,
+1951750	1956210	is that it's your item, it's your game.
+1957070	1959330	So if we only ship it with some of it,
+1959550	1961970	it kind of defeats the purpose of it.
+1961970	1965790	So yeah, Switch one will take a little bit longer
+1965790	1969810	for that reason, but hopefully it's worth the wait.
+1970850	1976650	And then once we've done the port,
+1977970	1979590	the PC one and the Switch one
+1979590	1981890	will basically be the same code base.
+1982030	1988410	So we can also think about other consoles.
+1989910	1994370	Yeah, but we don't have any other specific plans.
+1994790	2000190	I've got a good friend who is very good
+2000190	2001750	at coding for the Dreamcast.
+2002350	2003390	Oh, that's cool.
+2004130	2008250	Yeah, so I'm tempted to see if we can twist his arm
+2008250	2011590	to make us a Dreamcast port, or at least help us to do that.
+2012130	2014990	But it's not on our immediate radar.
+2015170	2017930	We've got too much to concentrate on at the moment.
+2017930	2019270	Yeah, for sure.
+2019530	2022290	I mean, you've got four different systems
+2022290	2023850	that you're releasing for.
+2024390	2028690	Luckily, the EverCode is actually just an emulator
+2028690	2030390	of the Game Boy Advance version.
+2030390	2031590	Oh, right, yes.
+2032050	2034850	So it's not really a separate build.
+2035110	2038670	I mean, it is, but it's also almost the same
+2038670	2040170	as the Game Boy Advance one.
+2041910	2045370	That's one really cool thing about making a Game Boy Advance game,
+2045370	2050230	is they're compact, everything in one package,
+2050330	2052290	and you can run it in lots of places.
+2052430	2058990	There's lots of emulators that can run the game no problem.
+2060530	2062370	Yeah, I say no problem, actually, at the moment.
+2064050	2067210	One pretty big emulator doesn't like the game.
+2067310	2069810	But we've fixed it several times, so we'll fix it again.
+2071150	2077470	Have you looked into the FPGAs as well,
+2077650	2082930	like the Mr. FPGAs and running things on the GBA cores there?
+2083550	2087270	Is that something that you're also making sure that that works?
+2087530	2089810	Or is that a later issue?
+2090850	2094310	No, I've got the analog pocket,
+2094490	2096950	and it's a very beautiful machine.
+2096950	2101450	I actually find it quite nice to test on.
+2101710	2107230	A lot of the time I can plug it in via USB and make a build,
+2107590	2110010	and our game takes three minutes to compile
+2110010	2112050	or six minutes to compile,
+2112210	2116150	depending if you've cleaned up the project or not.
+2116650	2124270	And I can just get it to build straight over the USB cable,
+2124270	2127250	and then I can just play it immediately once it's finished.
+2128450	2133510	It's super convenient to have a hardware that you can test on.
+2135530	2140670	It's always worked flawlessly on the analog pocket.
+2141130	2145750	I don't think we ever ran into any specific issues.
+2145910	2147890	I think there was maybe one graphical effect
+2147890	2151090	that lost one line of pixels on the analog pocket,
+2151150	2153210	and that's the only difference that I noticed
+2153210	2158070	on the entire thing between that and real hardware.
+2159830	2161670	But that was fixed, too.
+2162830	2172470	But yeah, there's another emulation called GPSP
+2172470	2176750	because it started out as a PSP emulator,
+2179670	2183110	and that one is super lightweight,
+2183310	2187250	so it can run on lots of low-end hardware.
+2189530	2197150	But to do that, I guess they've got some clever approximations
+2197150	2200070	and stuff, which sometimes it doesn't agree
+2200070	2204350	with some of our code, I guess.
+2204930	2208810	But I've got it running perfectly fine on my PSP,
+2208970	2213870	but at the moment, I think there's some routine
+2213870	2216450	to do with the save.
+2217430	2220290	I think it's the save select screen.
+2220430	2223870	It just doesn't like it, so we'll have to fix that this week.
+2224990	2227930	But yeah, we've fixed the GPSP build
+2227930	2230730	because it's important that emulators
+2230730	2234250	can play the game well,
+2234510	2237050	but we've fixed it several times during development,
+2237250	2240050	so we'll just make sure we fix it before we send
+2240050	2241450	our final build out on Monday.
+2242570	2245010	Yeah, looking at the homebrew community,
+2245390	2249230	and especially the Game Boy and Game Boy Advance community,
+2249390	2251450	there are a lot of different emulators
+2252430	2254550	with various compatibility.
+2255550	2260290	So do you try to test them yourself,
+2260570	2263450	or do you have a group of people
+2263450	2265570	that are testing for you and helping you out?
+2267010	2269490	Yeah, so we try to keep abreast
+2269490	2273470	of all the various emulators that we can.
+2273590	2276650	That's why I've got a PSP and an analog pocket
+2276650	2279590	and various bits.
+2281210	2286750	The Nano, the tiny little GBA emulator.
+2287830	2291790	So I've been testing in various places,
+2291790	2294910	but we've also got a very incredible group
+2294910	2297970	of beta testers who have been testing it
+2297970	2303130	on all sorts of things that I didn't even know
+2303130	2304690	you could test it on.
+2306350	2309430	And yeah, they found a lot of great things.
+2309430	2312510	And unbelievable amount of issues
+2312990	2315290	and strange edge cases.
+2317030	2319390	But yeah, it's super, super useful
+2319390	2323430	to have a bigger group of people testing it
+2323430	2326310	because they can just find stuff
+2326310	2327730	you wouldn't even think to look for.
+2328850	2328870	Yeah.
+2332270	2334470	So looking at Good Boy Galaxy,
+2334910	2338090	you have a release date now for December,
+2338090	2341750	and then you've got the PC ports
+2341750	2344130	and Switch ports and everything as well.
+2345270	2350330	What are your plans for going forward
+2350330	2352130	after the release?
+2352750	2356030	Do you have any plans to do a sequel
+2356030	2360630	or is there something that you couldn't keep in the game
+2360630	2362490	that you would like to do something with?
+2363190	2363470	Yeah.
+2365450	2367070	Well, to be honest,
+2367070	2371430	we managed to keep almost all of our ideas in the game.
+2371750	2372170	That's awesome.
+2373110	2376490	We had some just random ideas
+2377150	2379770	in the kitchen when we were working together
+2380870	2384070	of like, oh, what if he opens a burger shop
+2384070	2387430	to generate funds or something?
+2388130	2390350	And yeah, all this stuff,
+2390350	2394150	all the stuff that you'd think would get chopped away,
+2394190	2395990	we managed to get it all in.
+2396530	2402050	So on that sense, besides one planet that we did cut out,
+2402150	2407910	we got really everything we wanted in the game.
+2408530	2411870	But that's not to say that I wouldn't want to do it again
+2411870	2414590	and make a whole new galaxy to explore.
+2415790	2416930	I'd love to do that.
+2416930	2420890	But at the moment, I'm just really dying
+2420890	2422310	to work on something new.
+2422670	2426970	So in between, we'll definitely work on a new project.
+2427450	2431650	We've got a few of my old projects
+2431650	2436290	that before I learned the skill of finishing anything.
+2437010	2439170	So I've got a few of those I'd like to resurrect
+2439170	2442790	in the meantime that should be faster to make
+2442790	2446010	because A, we've got all the tech that we made for Good Boy
+2446010	2450090	and B, we've got a head start on some of the assets
+2450090	2453710	because I made this stuff years ago.
+2454510	2459210	And yeah, so we can make something faster than
+2459210	2461170	in two years' time this time.
+2461610	2465090	And then while working on that, we can start coming up
+2465090	2469210	with the bigger ideas or developing the bigger ideas
+2469210	2471930	that we have to work on other projects.
+2471930	2476010	And then maybe we'll come back around to Good Boy Galaxy
+2476010	2477390	and make a sequel.
+2478050	2480270	I think that sounds like a great idea.
+2480490	2482230	Work on something else in between.
+2482990	2485150	See how that goes as well.
+2485330	2485410	Yeah.
+2486030	2487990	A little palate cleanser.
+2488710	2489310	Yeah, exactly.
+2489690	2495510	I think back when we were doing 40-odd prototypes in a year
+2495510	2498990	and then doing one game in two years,
+2498990	2502690	I think there's a happy medium where we can have a few projects
+2502690	2504150	on the go, but they're smaller.
+2504930	2510590	And we've got some amount of work that's already
+2510590	2511430	been undertaken.
+2511430	2516650	So it's not quite the arduous task of Good Boy Galaxy.
+2518270	2521570	Yeah, so I think that's what we're thinking at the moment.
+2523070	2527090	You mentioned actually finishing projects.
+2527090	2533310	It's very common to not finish projects.
+2533310	2536590	I'm an expert at not finishing projects myself.
+2537210	2545250	So being locked in a physical medium where you have a release
+2545250	2548210	and you want to release and you have to do that well
+2548210	2551030	in advance, do you feel that that helped you finishing
+2551030	2551690	the game?
+2552810	2556090	Or did it make it harder?
+2559370	2563090	Yeah, I mean, to some degree, it's like, well,
+2563610	2565830	the deadline is now you have to deliver.
+2566290	2567210	There's a deliverable.
+2567570	2568090	You have to.
+2568590	2570670	You can't not do that.
+2570930	2573330	You can't be in breach of contract.
+2573890	2577550	And although technically the Kickstarter is you're
+2577550	2582690	not obligated, you're not guaranteed the reward,
+2583390	2587430	you don't want to upset such a large amount of people.
+2587950	2588590	Yeah, definitely.
+2589170	2590190	Yeah, exactly.
+2590810	2596510	So there's definitely obligations that need to be met,
+2596650	2600900	which can feel like a burden, but also definitely
+2601890	2603770	is a motivator.
+2606510	2616740	But yeah, I think it's just, yeah,
+2616800	2619720	like I said, it's not really a skill in itself.
+2619940	2628180	It's just a mindset to not spend all your time coming
+2628180	2632200	up with changing mind, making differing decisions
+2632200	2638680	and just always keep some momentum going.
+2639240	2644540	And then I think even the relatively big projects
+2644540	2648960	are achievable, whether it's timely or not.
+2651240	2654200	We underestimated the amount of time it would take
+2654200	2655700	by 100%.
+2655700	2658600	It took us twice as long as we thought.
+2658600	2663540	And somehow amongst our peers, that's not even bad.
+2663840	2664800	That's okay.
+2665280	2666840	That's actually pretty good.
+2668000	2675920	So yeah, just mindfuck should always be just keep
+2675920	2678840	some momentum, and then it'll get you there.
+2679480	2685800	I think a lot of developers say you should make small games,
+2686360	2688400	lots of small games, which is kind of what we did
+2688400	2690960	when we were working on prototypes,
+2691240	2698380	so many prototypes to kind of exercise that muscle
+2698380	2700020	of momentum.
+2700920	2704260	But I think what a lot of developers don't really
+2704260	2709780	talk about is it's kind of boring to work on small,
+2710420	2713580	uninteresting projects when there's the great,
+2713580	2718120	big magnum opus that everyone wants to work on.
+2718920	2725220	So I think really loving what you're doing is also
+2725220	2727540	a big motivator.
+2727880	2731880	So yeah, it's not as easy as it sounds when people say
+2731880	2733900	just work on 1,000 small projects.
+2735260	2737340	It's not the only part of the equation.
+2738760	2741260	Yeah, you definitely need to have the passion for it,
+2741260	2743400	because otherwise it's not going to get done.
+2745300	2752660	So looking at you, the studio, the game,
+2752820	2755960	as part of the indie gaming community,
+2756360	2760340	what are you excited about for the future of indie gaming?
+2760480	2764360	We see here a big revival, I think,
+2764460	2768660	of retro style and also retro games.
+2768660	2774400	But retro style has been in vogue for a good number
+2774400	2775220	of years now.
+2776580	2778280	And I love it.
+2778460	2782700	I'm a big, big fan of the retro style games.
+2783240	2785660	Do you think we'll see more of that,
+2785900	2789120	or will we move into a different type of genre?
+2792140	2794680	Yeah, I mean, I'm not really...
+2796080	2799040	I'm not sure that I'm the right person to really say.
+2799180	2801060	I'm not like...
+2801680	2807500	I'm not really abreast of all the trends on the consumer side.
+2808060	2814020	What I really enjoy is just watching what people are making
+2814020	2817480	and just taking it at face value and just enjoying it
+2817480	2818720	for what it is.
+2819180	2823680	So it's hard for me to forecast what the industry
+2823680	2828540	or the community is going to be doing next.
+2828720	2834040	But I think as long as people are making interesting stuff
+2834040	2835720	that they personally find interesting,
+2835720	2841120	I think that's always going to be where the gems come from.
+2843060	2850180	And I think if any particular style,
+2850360	2853080	like PlayStation 1 or games or something,
+2853080	2855560	which you sometimes...
+2856080	2858500	they seem to appear in small groups,
+2858600	2860360	I don't think...
+2860360	2864880	Although obviously people are inspired by each other's projects,
+2865480	2866900	I don't think anyone's thinking,
+2867300	2872380	I want to make a PlayStation 1 horror game just because I've seen...
+2872380	2875080	Just because they've proved that there's a market there.
+2875220	2880700	I think to make anything in this kind of hobby space,
+2880700	2884320	you have to really deep down want to make it.
+2884460	2885520	So I think...
+2885520	2892980	I don't know how applicable it is to kind of chase trends like it.
+2894840	2896500	Yeah, I just think they're so personal,
+2896640	2900080	which is what I love about the indie game space.
+2901060	2903760	Yeah, that's my opinion on it.
+2903980	2906740	I don't know if that's in spirit of the question.
+2907300	2908160	No, I think that's good.
+2910700	2913440	I think we see a lot of passion projects.
+2914200	2918340	And you can definitely tell when you're playing a game,
+2918480	2921460	you can tell that the person who made this game
+2921460	2926600	is proud of the game and had fun creating the game.
+2927220	2927860	Yeah, yeah.
+2928700	2935040	I think there's a lot to be unexcited about at the moment in indie gaming,
+2935040	2941780	like with Twitter deteriorating and Unity imploding.
+2943000	2945620	But in spirit of the question,
+2945820	2951880	in its kind of optimistic view,
+2952040	2957940	I think it maybe means there's a bit of a rebirth on the horizon,
+2958100	2962460	like there'll be a new place for community and marketing,
+2962460	2968300	and there'll be a new home for the Unity exiles.
+2969520	2971700	I really love Blender,
+2971960	2976720	so I'm really hoping that Godot becomes like the blender
+2976720	2979620	of game development software.
+2979980	2985000	I think, although it's not that much fun for a lot of people at the moment,
+2985240	2986940	maybe there's a bright future.
+2987860	2994420	And then, yeah, I mean, in terms of, yeah, like I say,
+2994580	2997580	what I'm really excited about is just people's personal projects.
+2997920	3006520	Like I love just scrolling through Twitter or Blue Sky or X, whatever,
+3007100	3010020	and just watching what people are making,
+3010220	3012140	and there's some really incredible stuff.
+3012140	3017980	There's someone called Kosefi, I think, Chun-Fai.
+3018380	3024220	They've been making a dungeon-faller game where you also play as a dog.
+3024440	3027480	So that's, yeah, that's something that I like.
+3027560	3031580	And it's just so, I think they're mainly a freelance artist,
+3031720	3034460	but they're just in their spare time, been doing this for years.
+3034880	3036340	It's so beautiful.
+3036760	3040600	Like it's just every note is just absolutely perfect.
+3040600	3043280	And every time that comes up on my Twitter feed,
+3043320	3045840	I'm just like, it makes my day feel a little bit better.
+3045900	3048020	And there's so many projects like that.
+3048140	3050820	And I think, yeah, that's what I'm really excited about.
+3052120	3053060	That's really cool.
+3053420	3055300	Rick, this has been fantastic.
+3055560	3059460	Thank you so much for talking to me today
+3059460	3064280	and showcasing Good Boy Galaxy, diving into the game,
+3064460	3066060	diving into you as a person.
+3066780	3068980	This has been really, really fun.
+3068980	3073000	Where can we find more information about Good Boy Galaxy,
+3073280	3075060	about you, your projects?
+3077320	3083480	So the best way to find the information is just go to our website,
+3083620	3085560	which is goodboygalaxy.com.
+3085740	3089440	And on that page, there's a link to our personal Twitters.
+3091660	3095460	And yeah, that's where all the info is.
+3096680	3097220	Fantastic.
+3097220	3099400	Thank you so much, Rick.
+3099720	3101360	Again, this has been fantastic.
+3101720	3105200	And thank you, everyone who has listened in or watched us.
+3105700	3109020	Have a fantastic week and see you all next time.
+3109580	3110000	Bye.
+3110800	3111760	Thank you very much.
+3111760	3125560	♪♪♪

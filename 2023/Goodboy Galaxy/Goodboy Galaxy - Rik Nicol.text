@@ -1,0 +1,753 @@
+Hello everyone and welcome to yet another Hit Save podcast.
+I'm here with Rick Nickel of Good Boy Galaxy and you just saw the Good Boy Galaxy trailer
+that just came out like two weeks ago here.
+The latest one.
+It's really, really fun.
+Really fun game, first of all.
+Super cool trailer.
+And I love the music.
+So hi Rick.
+Hi Rick.
+Do you want to introduce yourself?
+Yeah.
+Hi, I'm Rick from Good Boy Galaxy.
+And yeah, I'm more on the creative side.
+And with my friend Jeremy, we've been working on Good Boy Galaxy for the past couple of
+years.
+So tell me a bit about Good Boy Galaxy.
+What is it?
+So it's a exploration-based platform game.
+I'm a bit hesitant to call it a Metroidvania because I don't think it really checks all
+the boxes.
+But it's kind of in the same vein a little bit.
+And yeah, it's a platform adventure game for the Game Boy Advance.
+So a new game for the Game Boy Advance being made in this year of 2023.
+What made you think of this?
+What made you go into making a Game Boy game in 2023?
+Or even a few years earlier?
+Yeah.
+Well, we started it as a game jam project.
+So it was just a small weekend project.
+And I think it was for the Ludum Dare game jam.
+And we just wondered, could we do it in such a short time frame?
+And we just about, to the very last hour, which is game jam tradition, did manage to
+pull off a playable game that had a couple of levels and an end that actually run on
+the Game Boy Advance.
+And of course, that made us overconfident.
+So we thought, it's easy, we can do this.
+And yeah, there was not much prior thought behind it.
+But it just felt like a fun thing to do.
+And it was a fun thing to do.
+We really enjoyed doing it.
+And the Game Boy Advance is just super special to us.
+So it felt right.
+And also with the kind of gratuitous, it was the 20th anniversary of the Game Boy Advance
+just recently.
+So it kind of lined up with that as well.
+So everything just kind of seemed in alignment at the time.
+But there wasn't really a special reason.
+It was just kind of, we thought it was fun.
+We thought it was interesting.
+And we didn't run into any very difficult obstacles that made us give up.
+So that's the reason, really.
+Awesome.
+So I want to show the picture here is of a GBA running your game.
+And this is my favorite form factor of the GBA.
+I know a lot of people will maybe disagree.
+But I think this is just a fantastic, iconic, handheld console.
+The amount of effort that you put into the game, as I was playing the beta release that
+you sent over to us, thank you so much for providing that.
+I was just amazed by the animations, the artwork.
+It's so colorful.
+It's really, really fun to play.
+And as you said, exploratory, just exploring the different areas and going back and trying
+new, different things, dying a lot.
+It's just so much fun.
+So how did you get into this?
+What's your background in game development?
+And how did you get to where you are right now developing this?
+Because it's a very polished game.
+Thank you very much.
+So I guess earlier in my career, I was working in web development and a bit of print design.
+But I was always doing kind of small freelance things or hobby things, mainly pixel art for
+mobile games and stuff like that.
+So that was my background.
+And then a few years ago, six years ago, I moved to the Netherlands to work at a mobile
+game studio called Lucky Cat.
+And that's where I met Jeremy.
+So we had a few years, a couple of years working together there, too.
+And I think it's really when I developed my skill set a bit more because we were doing
+like 40 something prototypes a year.
+Like it's a crazy amount of projects.
+So it was just like nonstop learning.
+And yeah, that's how I got into it.
+And that's where I met Jeremy.
+He's also from England, but we both met in the Netherlands.
+Just a short jump over the puddle.
+Yeah, very short.
+They're surprisingly similar countries.
+But yeah, we did a couple of game jams in the weekends.
+And yeah, this was one of them.
+You said you did about 40 projects a year plus game jams during the weekend.
+Yeah.
+That sounds like a lot of innovation, a lot of trying new things.
+Yeah, it is kind of, it's like a, it's something that you practice and kind of get good at.
+But I'm hesitant to call it its own skill because actually the skill is just,
+it's kind of like just accepting the idea that comes to you and just doing it and not interrogating it too much.
+And then you discover things along the way.
+But yeah, that's definitely had a relatively big part in this project coming about.
+What were some of the other game jam projects that you tried out but didn't feel like it had legs to stand on its own, such as Good Boy Galaxy?
+The one other game jam that I did with Jeremy was, it was called Super Bike Strike.
+Super Bike Strike?
+Yeah, it was kind of like a side-scrolling shoot-em-up.
+But the interesting thing was you'd jump from your ship, which is actually a hover bike,
+and then you'd land on the other person's bike and like punch them off.
+And then their bike would like fall down and smash into other bikes.
+So you could have quite a chain reaction.
+And there was like a bit of a double jump to save you from just immediately falling down.
+It's that little bit of gameplay, the bit where you jump and attack,
+is super satisfying when you actually land on the bike, that you intend to.
+But we did run into some trouble.
+It's actually a little bit more difficult than you want it to be.
+And one of the caveats to the difficulty is the game is actually more difficult
+the fewer enemies are around, which is actually inverse what you expect.
+But it also ramps up the challenge in other ways that way, because you've got more people shooting at you.
+So it's very difficult to get the balance right.
+And to get the game feel to good, it had to be quite fast and quite zoomed in.
+But that also made it more difficult to land where you want.
+And I think the idea's got legs, but I think it'd have to be done maybe in 3D or something
+to make it a bit more user-friendly, I guess.
+But yeah, that's the previous game jam that we did before Good Boy.
+That sounds really cool too. I would love to try that out.
+I'll send you a link afterwards.
+Fantastic.
+So Good Boy Galaxy was thought up as a game jam project during a weekend.
+How did you go about after the game jam?
+What was your thought process like?
+Like, okay, maybe we should do something here.
+How did you go about actually doing something?
+You ran a Kickstarter. I definitely want to dive into that as well.
+Yeah, so we didn't really think about the Kickstarter for quite a long time.
+We were just working on it a weekend a month or something, just here and there.
+And then I think it's when COVID hit, everyone was working from home
+and suddenly had their commute time.
+And there was less to do.
+So we got more done.
+And that's when we were getting the demo that ended up launching the Kickstarter.
+So yeah, we got the demo ready.
+And then we just decided to make it a full...
+At that point, it was quite obvious that it was worth pursuing.
+But when it was just the game jam version, it was just a little side hobby.
+It wasn't that interesting.
+But at the point when the demo was taking shape
+is when we decided to take it to Kickstarter.
+So what was your experience with Kickstarter?
+We'd partnered with First Press to publish the physical copies
+before we did the Kickstarter.
+And they'd done a few other Kickstarters before.
+So we kind of knew a little bit what to expect.
+So yeah, basically, the deal was we had a limited amount that we could sell.
+And then basically, we didn't really have to pay for it.
+It was kind of like an advance.
+So that's why it's limited.
+So that it's safe for all parties.
+But of course, we blew through the whole thing in the first day,
+which nobody really expected.
+And then people were angry about it.
+And we were kind of unprepared for it.
+So it's a bit stressful, to be honest.
+And of course, we're both still working.
+We kind of wanted, or we kind of expected,
+it to be a bit of a continuation of a side Hollywood project.
+But when you have a Kickstarter that successful,
+you're kind of responsible to fulfil your biggest promises.
+So it was kind of a mix, mixed emotions.
+I was also finding it difficult to sleep with all that going on.
+So it's like heightening the emotions of the excitement and the stress.
+But I mean, it was definitely a very overall positive experience.
+And it was definitely super grateful for everyone that's backed the project
+and given us this opportunity to make the game exactly as we really want to.
+And not just cutting corners and doing it here and there.
+So yeah, hopefully they're happy with their decision
+when they finally get to play the game.
+Yeah, what I've seen so far from the game,
+I definitely think that people are going to be very, very happy with the end result.
+Again, I am amazed by the animation, the colour.
+It pops, it really, really pops.
+The music is really solid.
+So what is your role within the game?
+And what's Jeremy's role in the game?
+Yeah, so I guess the trouble is we both do a bit of everything.
+But from my side, it's mainly creative stuff, all the art and animation.
+And a lot of the game design, I guess, comes from my side.
+And then from Jeremy's side, he's like the technical guy.
+He's set up the project, all the programming, his remit.
+And making sure it compiles, fixing bugs,
+tracking down the most esoteric thing that you can possibly imagine
+in the Game Boy Advance's hardware.
+But yeah, there's definitely some overlap.
+I've also done a lot of coding myself,
+like a lot of the fancy effects in the backgrounds
+and all the quests and stuff.
+A lot of that's me. Sometimes it has to be fixed.
+And then music, we've both kind of done.
+Also Vincent Perger, aka Tui, did a lot of the music in the game.
+But yeah, me and Jeremy both like doing music too.
+So we've both had a hand in that.
+And then level design, we've also both done.
+We have slightly different philosophies when it comes to level design.
+So Jeremy makes the most clever and cruel Mario Maker levels
+that you've ever played and that are very difficult,
+but very clever mechanically.
+And from my design background and from all the time working on mobile games,
+I've very much got the mindset of simplification,
+making everything move.
+So it's interesting.
+We've worked collaboratively on the levels
+and we're both making passives over each other's work
+until eventually we've got something that's...
+We like to think of it as a bit of cake and eating it too,
+because we've got the clever ideas,
+but hopefully there's less frustration.
+I don't want to sound the corners off completely,
+but we've tried to make it so that there's no showstoppers
+if you get completely stuck.
+But yeah, that's where we're at.
+You mentioned that there are some quirks
+when it comes to programming for the GBA.
+What are some challenges that you have met and overcome,
+or at least tried to overcome?
+It's a relatively advanced...
+You'll forgive the pun.
+It's got the feeling like it's a SNES or a Mega Drive or a Genesis,
+but it's actually a lot more powerful.
+So it's a lot freer than you'd imagine,
+or you might imagine it would be,
+but there's still some tight restrictions.
+There's only a finite amount of layers.
+There's only four layers, I think.
+And we work in four bits per pixel, I think,
+which is 15 colours per spline or per tile.
+Yeah, there's a lot of clever tricks
+to try and get the absolute most out of it.
+Like with the layers,
+sometimes we split them into sections
+so that we can scroll one layer at different speeds,
+depending on where it is,
+to get the feeling of more depth
+and constantly running a lot of...
+So from the art side, I really want to make the levels feel unique
+and have lots of areas within them
+that feel not quite set piece,
+but at least so you know where you are,
+because you can go through the level in several different ways.
+It's important to have landmarks,
+but that's expensive when you can only have so many tiles in memory.
+So we went through incredible lengths
+of automatically figuring out
+which tiles are similar enough to be collapsed into one tile.
+We can keep them...
+We can flip and mirrored versions of the tiles
+don't count as an extra tile.
+So we have lots of clever use of that.
+That's smart.
+Yeah, there's so many really...
+quite arduous tasks that end up just shaving enough off
+that you can do what you actually wanted to do in the first place,
+which is super important on the low-end consoles.
+But obviously when we do the switch port,
+which we're just starting now,
+it's probably all this stuff is no longer necessary.
+But it was fun, little puzzles to figure out.
+So I enjoyed it anyway.
+That's awesome.
+So we've gone quite deep into the technical weeds already.
+So I want to bring us back up a bit
+and talk about the game itself
+and the story in the game, the characters.
+So tell us a bit about who you are as a player
+and what the mission is, the story is.
+Okay. So the background of the game
+or the overarching story is that you're this dog
+named Maxwell.
+He's not a dog from Earth.
+He's a dog from the dog galaxy, obviously.
+And his system or his planet is dying
+or collapsing or in trouble.
+So being the good boy that he is,
+he takes it on himself to use his hyperdrive
+to blast to a whole new system
+with no idea if he's going to find anything
+or find advanced civilization that could help him.
+It's a big risk, basically.
+So he goes ahead and does that.
+And then he has to use every single jump
+at his availability.
+So now he's completely stranded in this new galaxy.
+But he has found life, civilization and such.
+But yeah, so it's his job now to figure out a way home
+and also figure out if there's someone
+that can actually help him in his original mission.
+Yeah, the reason we did it like this is we wanted
+to really emphasize exploration and discovery,
+I guess is the right word.
+So having Maxwell also be discovering this at the same time
+as the player made the most sense to us.
+One of our mantras when deciding and designing the worlds
+and stuff was the word surprise.
+So we really wanted there to be unexpected things
+to find when you're exploring stuff.
+And the best way we felt to go about that was
+to make everything unexpected in the sense that it's all alien
+to you, the player, and also to the character
+that you're playing as.
+The exploration, I mentioned earlier here that I died a lot.
+But it doesn't feel punishing.
+It's more like, yes, I know why I perished here.
+Because I was doing something that I shouldn't.
+So then I try again, and I die, and I try again, and I die.
+And then eventually I figure out, oh, no, wait, this is the way I'm going about this.
+I really like the quick return
+to where you were so you can try it again.
+It's a very forgiving gameplay, I would say,
+even though it's hard at times.
+It's very forgiving.
+And it's super, super fun.
+I love the interactions
+between the good boy here, Maxwell,
+and the characters that he meets.
+Because it's super funny.
+It's really well written.
+I think it's on the second world.
+I don't want to spoil the surprise, but you get locked in
+a little for a bit.
+And I was not prepared for that at all.
+I was like, oh, wait, this is very different.
+And you have to fight your way out.
+It's really, really fun.
+And I love that, as you said, the environment is alien.
+So you're exploring as well as Maxwell
+and just finding things out and learning about the environment.
+It's super, super fun.
+Thank you very much.
+So you said you go off the theme of surprise.
+So how do you plan for surprises?
+It's a good question.
+I think surprise is maybe too strong a word.
+But it's what we told ourselves.
+So we ask with it.
+I like it.
+I think, yeah, how we dealt with this
+was mainly me and my friend Andreas.
+And Andreas is a guy that I met in London
+when I lived there.
+And he's this super chill dude.
+And he's super creative.
+Kind of like Jake the dog from Adventure Time.
+So basically we'd have these long chats.
+And Andreas was working on concept art with me.
+So we were kind of coming up with a lot of these ideas together.
+I think if I was coming up with everything on my own,
+I don't know.
+I couldn't really surprise myself.
+Or I couldn't really have that sense of wonder.
+So when we were collaborating,
+it was super important because I knew what was
+what would grab my sense of wonder
+or my attention.
+And we'd figure out a way to combine our ideas
+and workshop things.
+So yeah, we basically just had
+just conversations where we were talking about
+broad ideas and then just
+going away, sketching things out,
+coming up with random...
+Sometimes it would be a visual design
+and then we'd come up with the lore behind it.
+And sometimes it'd be we had a vague idea
+of what kind of a character
+and then one of us would go and draw it
+and then we'd develop it a bit more.
+But yeah, I think there was a bit of back and forth
+between us that really...
+That's basically how we planned for Surprise,
+was by surprising each other.
+I think that's a really good method.
+It seems to have worked really well.
+I definitely was surprised
+by the piece that I'm playing,
+the parts that I've been playing.
+And yeah, it's just, again, super, super fun.
+So how did you get into game development?
+What was it that drove you to start
+with game development all these years ago?
+Yes, I guess I was always kind of
+interested in it.
+I grew up with like an 8-bit Atari.
+And yeah, I just...
+I was always sketching ideas for games
+and trying my best to program in BASIC.
+And yeah, it's been something
+that I've been doing for my whole life, basically.
+So it's really hard to pinpoint a specific moment.
+But I think a lot of those older games,
+they're kind of...
+They kind of have an alien, otherworldly feel to them
+a little bit by accident,
+because they often didn't...
+It wasn't normal yet to have an artist involved in the game.
+So it was abstract to the point of absurdity.
+In some cases.
+And yeah, it felt something separate to real life.
+Whereas games now, obviously,
+some of them are very realistic
+and feel almost like a movie or a dream or something.
+Whereas some of those older games
+seemed to be almost like this whole separate thing to reality.
+And I think that really...
+It really affected my imagination, I guess,
+because it just really made you want to fill in the details
+and come up with your own other worlds.
+So yeah, for me, it's almost like it's been there since day one.
+I've just finally gone out on my own
+and made something that's more my own
+rather than working for hire on other people's projects.
+And for Jeremy, I think it's similar.
+He grew up with consoles
+rather than quite the old-man computers that I had.
+And yeah, he's been, like I said,
+working on Mario Maker levels and this kind of thing.
+So for him, I think it's...
+Yeah, I think it's a similar thing.
+It's something that we've kind of grown up with,
+but just from slightly different perspectives.
+Cool.
+So, Good Boy Galaxy is coming out for the Game Boy Advance.
+You also mentioned Nintendo Switch port.
+What else will it be on?
+There's an Evercade version that's also announced, I think.
+I'm not 100% sure when that one's shipping.
+I think it might be December.
+So similar time to the Game Boy Advance version.
+And then we've got the Switch version and the PC version,
+which we're doing now.
+We're trying to add a little extra to that.
+So we're trying to add some local co-op missions.
+So it's going to take a little bit longer,
+but hopefully not too much longer.
+The Switch one is a bit of a question mark.
+I know there's a lot more checks and hoops to jump through.
+But hopefully we can get the PC one out
+either at the end of the year or sometime early next year.
+We've also got the option on the PC to release it
+without the extra stuff and then add it later,
+which we can't really do that on the Switch
+because we're doing physical copies.
+And technically we can do that on the Switch,
+but I think people really didn't like the idea
+of having a cartridge that hasn't got all the content on.
+And because it's a niche product,
+we're going to have to abide
+by people's best wishes on that kind of thing.
+And it totally makes sense.
+I think that's one of the really cool things about physical,
+is that it's your item, it's your game.
+So if we only ship it with some of it,
+it kind of defeats the purpose of it.
+So yeah, Switch one will take a little bit longer
+for that reason, but hopefully it's worth the wait.
+And then once we've done the port,
+the PC one and the Switch one
+will basically be the same code base.
+So we can also think about other consoles.
+Yeah, but we don't have any other specific plans.
+I've got a good friend who is very good
+at coding for the Dreamcast.
+Oh, that's cool.
+Yeah, so I'm tempted to see if we can twist his arm
+to make us a Dreamcast port, or at least help us to do that.
+But it's not on our immediate radar.
+We've got too much to concentrate on at the moment.
+Yeah, for sure.
+I mean, you've got four different systems
+that you're releasing for.
+Luckily, the EverCode is actually just an emulator
+of the Game Boy Advance version.
+Oh, right, yes.
+So it's not really a separate build.
+I mean, it is, but it's also almost the same
+as the Game Boy Advance one.
+That's one really cool thing about making a Game Boy Advance game,
+is they're compact, everything in one package,
+and you can run it in lots of places.
+There's lots of emulators that can run the game no problem.
+Yeah, I say no problem, actually, at the moment.
+One pretty big emulator doesn't like the game.
+But we've fixed it several times, so we'll fix it again.
+Have you looked into the FPGAs as well,
+like the Mr. FPGAs and running things on the GBA cores there?
+Is that something that you're also making sure that that works?
+Or is that a later issue?
+No, I've got the analog pocket,
+and it's a very beautiful machine.
+I actually find it quite nice to test on.
+A lot of the time I can plug it in via USB and make a build,
+and our game takes three minutes to compile
+or six minutes to compile,
+depending if you've cleaned up the project or not.
+And I can just get it to build straight over the USB cable,
+and then I can just play it immediately once it's finished.
+It's super convenient to have a hardware that you can test on.
+It's always worked flawlessly on the analog pocket.
+I don't think we ever ran into any specific issues.
+I think there was maybe one graphical effect
+that lost one line of pixels on the analog pocket,
+and that's the only difference that I noticed
+on the entire thing between that and real hardware.
+But that was fixed, too.
+But yeah, there's another emulation called GPSP
+because it started out as a PSP emulator,
+and that one is super lightweight,
+so it can run on lots of low-end hardware.
+But to do that, I guess they've got some clever approximations
+and stuff, which sometimes it doesn't agree
+with some of our code, I guess.
+But I've got it running perfectly fine on my PSP,
+but at the moment, I think there's some routine
+to do with the save.
+I think it's the save select screen.
+It just doesn't like it, so we'll have to fix that this week.
+But yeah, we've fixed the GPSP build
+because it's important that emulators
+can play the game well,
+but we've fixed it several times during development,
+so we'll just make sure we fix it before we send
+our final build out on Monday.
+Yeah, looking at the homebrew community,
+and especially the Game Boy and Game Boy Advance community,
+there are a lot of different emulators
+with various compatibility.
+So do you try to test them yourself,
+or do you have a group of people
+that are testing for you and helping you out?
+Yeah, so we try to keep abreast
+of all the various emulators that we can.
+That's why I've got a PSP and an analog pocket
+and various bits.
+The Nano, the tiny little GBA emulator.
+So I've been testing in various places,
+but we've also got a very incredible group
+of beta testers who have been testing it
+on all sorts of things that I didn't even know
+you could test it on.
+And yeah, they found a lot of great things.
+And unbelievable amount of issues
+and strange edge cases.
+But yeah, it's super, super useful
+to have a bigger group of people testing it
+because they can just find stuff
+you wouldn't even think to look for.
+Yeah.
+So looking at Good Boy Galaxy,
+you have a release date now for December,
+and then you've got the PC ports
+and Switch ports and everything as well.
+What are your plans for going forward
+after the release?
+Do you have any plans to do a sequel
+or is there something that you couldn't keep in the game
+that you would like to do something with?
+Yeah.
+Well, to be honest,
+we managed to keep almost all of our ideas in the game.
+That's awesome.
+We had some just random ideas
+in the kitchen when we were working together
+of like, oh, what if he opens a burger shop
+to generate funds or something?
+And yeah, all this stuff,
+all the stuff that you'd think would get chopped away,
+we managed to get it all in.
+So on that sense, besides one planet that we did cut out,
+we got really everything we wanted in the game.
+But that's not to say that I wouldn't want to do it again
+and make a whole new galaxy to explore.
+I'd love to do that.
+But at the moment, I'm just really dying
+to work on something new.
+So in between, we'll definitely work on a new project.
+We've got a few of my old projects
+that before I learned the skill of finishing anything.
+So I've got a few of those I'd like to resurrect
+in the meantime that should be faster to make
+because A, we've got all the tech that we made for Good Boy
+and B, we've got a head start on some of the assets
+because I made this stuff years ago.
+And yeah, so we can make something faster than
+in two years' time this time.
+And then while working on that, we can start coming up
+with the bigger ideas or developing the bigger ideas
+that we have to work on other projects.
+And then maybe we'll come back around to Good Boy Galaxy
+and make a sequel.
+I think that sounds like a great idea.
+Work on something else in between.
+See how that goes as well.
+Yeah.
+A little palate cleanser.
+Yeah, exactly.
+I think back when we were doing 40-odd prototypes in a year
+and then doing one game in two years,
+I think there's a happy medium where we can have a few projects
+on the go, but they're smaller.
+And we've got some amount of work that's already
+been undertaken.
+So it's not quite the arduous task of Good Boy Galaxy.
+Yeah, so I think that's what we're thinking at the moment.
+You mentioned actually finishing projects.
+It's very common to not finish projects.
+I'm an expert at not finishing projects myself.
+So being locked in a physical medium where you have a release
+and you want to release and you have to do that well
+in advance, do you feel that that helped you finishing
+the game?
+Or did it make it harder?
+Yeah, I mean, to some degree, it's like, well,
+the deadline is now you have to deliver.
+There's a deliverable.
+You have to.
+You can't not do that.
+You can't be in breach of contract.
+And although technically the Kickstarter is you're
+not obligated, you're not guaranteed the reward,
+you don't want to upset such a large amount of people.
+Yeah, definitely.
+Yeah, exactly.
+So there's definitely obligations that need to be met,
+which can feel like a burden, but also definitely
+is a motivator.
+But yeah, I think it's just, yeah,
+like I said, it's not really a skill in itself.
+It's just a mindset to not spend all your time coming
+up with changing mind, making differing decisions
+and just always keep some momentum going.
+And then I think even the relatively big projects
+are achievable, whether it's timely or not.
+We underestimated the amount of time it would take
+by 100%.
+It took us twice as long as we thought.
+And somehow amongst our peers, that's not even bad.
+That's okay.
+That's actually pretty good.
+So yeah, just mindfuck should always be just keep
+some momentum, and then it'll get you there.
+I think a lot of developers say you should make small games,
+lots of small games, which is kind of what we did
+when we were working on prototypes,
+so many prototypes to kind of exercise that muscle
+of momentum.
+But I think what a lot of developers don't really
+talk about is it's kind of boring to work on small,
+uninteresting projects when there's the great,
+big magnum opus that everyone wants to work on.
+So I think really loving what you're doing is also
+a big motivator.
+So yeah, it's not as easy as it sounds when people say
+just work on 1,000 small projects.
+It's not the only part of the equation.
+Yeah, you definitely need to have the passion for it,
+because otherwise it's not going to get done.
+So looking at you, the studio, the game,
+as part of the indie gaming community,
+what are you excited about for the future of indie gaming?
+We see here a big revival, I think,
+of retro style and also retro games.
+But retro style has been in vogue for a good number
+of years now.
+And I love it.
+I'm a big, big fan of the retro style games.
+Do you think we'll see more of that,
+or will we move into a different type of genre?
+Yeah, I mean, I'm not really...
+I'm not sure that I'm the right person to really say.
+I'm not like...
+I'm not really abreast of all the trends on the consumer side.
+What I really enjoy is just watching what people are making
+and just taking it at face value and just enjoying it
+for what it is.
+So it's hard for me to forecast what the industry
+or the community is going to be doing next.
+But I think as long as people are making interesting stuff
+that they personally find interesting,
+I think that's always going to be where the gems come from.
+And I think if any particular style,
+like PlayStation 1 or games or something,
+which you sometimes...
+they seem to appear in small groups,
+I don't think...
+Although obviously people are inspired by each other's projects,
+I don't think anyone's thinking,
+I want to make a PlayStation 1 horror game just because I've seen...
+Just because they've proved that there's a market there.
+I think to make anything in this kind of hobby space,
+you have to really deep down want to make it.
+So I think...
+I don't know how applicable it is to kind of chase trends like it.
+Yeah, I just think they're so personal,
+which is what I love about the indie game space.
+Yeah, that's my opinion on it.
+I don't know if that's in spirit of the question.
+No, I think that's good.
+I think we see a lot of passion projects.
+And you can definitely tell when you're playing a game,
+you can tell that the person who made this game
+is proud of the game and had fun creating the game.
+Yeah, yeah.
+I think there's a lot to be unexcited about at the moment in indie gaming,
+like with Twitter deteriorating and Unity imploding.
+But in spirit of the question,
+in its kind of optimistic view,
+I think it maybe means there's a bit of a rebirth on the horizon,
+like there'll be a new place for community and marketing,
+and there'll be a new home for the Unity exiles.
+I really love Blender,
+so I'm really hoping that Godot becomes like the blender
+of game development software.
+I think, although it's not that much fun for a lot of people at the moment,
+maybe there's a bright future.
+And then, yeah, I mean, in terms of, yeah, like I say,
+what I'm really excited about is just people's personal projects.
+Like I love just scrolling through Twitter or Blue Sky or X, whatever,
+and just watching what people are making,
+and there's some really incredible stuff.
+There's someone called Kosefi, I think, Chun-Fai.
+They've been making a dungeon-faller game where you also play as a dog.
+So that's, yeah, that's something that I like.
+And it's just so, I think they're mainly a freelance artist,
+but they're just in their spare time, been doing this for years.
+It's so beautiful.
+Like it's just every note is just absolutely perfect.
+And every time that comes up on my Twitter feed,
+I'm just like, it makes my day feel a little bit better.
+And there's so many projects like that.
+And I think, yeah, that's what I'm really excited about.
+That's really cool.
+Rick, this has been fantastic.
+Thank you so much for talking to me today
+and showcasing Good Boy Galaxy, diving into the game,
+diving into you as a person.
+This has been really, really fun.
+Where can we find more information about Good Boy Galaxy,
+about you, your projects?
+So the best way to find the information is just go to our website,
+which is goodboygalaxy.com.
+And on that page, there's a link to our personal Twitters.
+And yeah, that's where all the info is.
+Fantastic.
+Thank you so much, Rick.
+Again, this has been fantastic.
+And thank you, everyone who has listened in or watched us.
+Have a fantastic week and see you all next time.
+Bye.
+Thank you very much.
+♪♪♪
