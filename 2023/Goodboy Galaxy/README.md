@@ -1,4 +1,4 @@
-# Transcript of interview with with Rik Nicol - Goodboy Galaxy
+# Transcript of interview with Rik Nicol - Goodboy Galaxy
 
 ## Details
 
