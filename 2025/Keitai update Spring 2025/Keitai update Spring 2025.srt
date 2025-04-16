@@ -1,0 +1,3048 @@
+1
+00:00:00,000 --> 00:00:07,680
+hello everyone and welcome to yet another hit save podcast this time we're doing a deep dive into the
+
+2
+00:00:07,680 --> 00:00:15,920
+keitai phone game japanese phone game preservation that's happening and i got four
+
+3
+00:00:15,920 --> 00:00:21,360
+lovely people with me here today we got ellen cooper who's also a board member here at hit save
+
+4
+00:00:21,360 --> 00:00:30,880
+we got stephanie garorski uh who is the founder and uh maintainer of squirrel jme we got rockman
+
+5
+00:00:30,880 --> 00:00:41,280
+cosmo also known as max and we got yubi hi everyone hello hi hey how's it going so before we kick off
+
+6
+00:00:41,280 --> 00:00:46,480
+with all the technical stuff and all the games that you have preserved in the past year i would
+
+7
+00:00:46,480 --> 00:00:53,280
+like you all to introduce yourself to the audience here so we can start off in the same order as we
+
+8
+00:00:53,280 --> 00:01:02,880
+did in the introduction here so ellen sure hi i'm ellen i am a board member for hit save i am also
+
+9
+00:01:02,880 --> 00:01:10,480
+the founder of keitai wiki which is a wiki dedicated to recording information on japanese phone games i
+
+10
+00:01:10,480 --> 00:01:19,120
+have involvement in the hardware and software parts of um feature phone hacking and i also
+
+11
+00:01:19,120 --> 00:01:26,480
+just do a lot of general organization um with regards to the wiki and to the community awesome
+
+12
+00:01:26,480 --> 00:01:36,480
+stephanie uh yeah so um i'm stephanie and i work on scroll jamie which is a java me8 virtual machine
+
+13
+00:01:36,480 --> 00:01:44,480
+and i've been working on that since 2016 and pretty much i've been working on dojo support and mint piece
+
+14
+00:01:44,480 --> 00:01:53,600
+support so western and i guess eastern phones and that's been going pretty well uh keitai wiki wise
+
+15
+00:01:54,320 --> 00:02:01,040
+um i don't really do much apart from you know sometimes i help out yubi when he's doing the reverse
+
+16
+00:02:01,040 --> 00:02:16,720
+engineering so basically i know lots of java so awesome awesome and uh max hi yeah i'm max also
+
+17
+00:02:16,720 --> 00:02:22,400
+known online as rockman cosmo um i'm a game preservationist who specializes in japanese feature
+
+18
+00:02:22,400 --> 00:02:28,640
+phone games so i'm kind of like like the leading advocate i guess for the preservation of these games
+
+19
+00:02:28,640 --> 00:02:34,800
+but i've also done some of the preservation work myself but yeah since i think like since the imo
+
+20
+00:02:34,800 --> 00:02:40,880
+shut down in november 2021 i guess i've dedicated too much of my life to preserving these kinds of
+
+21
+00:02:40,880 --> 00:02:46,480
+games it's kind of consumed me but it's also led me to you know come across all these wonderful people
+
+22
+00:02:46,480 --> 00:02:52,240
+that are on these podcasts and yeah i continue to spread awareness and actually last summer as i'll
+
+23
+00:02:52,240 --> 00:02:58,480
+discuss later i actually spoke at two conferences on this so it's been a wonderful past year
+
+24
+00:02:58,880 --> 00:03:05,920
+awesome and last but not least yubi hey how's it going uh yubi or sometimes you might see me as a
+
+25
+00:03:05,920 --> 00:03:11,920
+yubi app uh on the socials uh kind of the i don't know new guy to the team i guess the best way of
+
+26
+00:03:11,920 --> 00:03:16,560
+putting it uh i don't know how long i've been here maybe like almost a year now probably eight months
+
+27
+00:03:16,560 --> 00:03:23,200
+nine months all around there uh primarily focus on a reverse engineering of server-based
+
+28
+00:03:23,200 --> 00:03:30,960
+uh i mode games or even just tool creation of any kind uh previously mostly i'm a translation guy
+
+29
+00:03:30,960 --> 00:03:36,560
+doing all the hacking for getting translations from japanese english and then kind of took my skill
+
+30
+00:03:36,560 --> 00:03:49,040
+sets and uh use them for good now on the keitai side so so what i do awesome awesome so i wanted to dive
+
+31
+00:03:49,040 --> 00:03:57,680
+into the keitai wiki a bit and start off there so ellen you started the keitai wiki a while ago
+
+32
+00:03:58,480 --> 00:04:06,240
+yes i started yeah sorry i started it in august of 2023 so it's getting close to uh two years about a
+
+33
+00:04:06,240 --> 00:04:14,640
+year and a half so what is it what what's the keitai wiki about the keitai wiki is a collection of
+
+34
+00:04:14,640 --> 00:04:23,040
+information about japanese feature phone games applications and other related media it's a place
+
+35
+00:04:23,040 --> 00:04:29,520
+that records a lot of this information in english which is not written about on almost any other
+
+36
+00:04:29,520 --> 00:04:39,440
+sites so it's a treasure trove for anyone who wants to get into preserving japanese phones and
+
+37
+00:04:39,440 --> 00:04:45,760
+phone games absolutely but that being said even though it's getting close to two years old the
+
+38
+00:04:45,760 --> 00:04:53,200
+wiki is definitely still in the early phases that's still a lot of pages that need to be made there are
+
+39
+00:04:53,200 --> 00:04:58,960
+thousands of games released and while we have a lot of the important ones and a lot of the ones
+
+40
+00:04:58,960 --> 00:05:05,840
+that we have found on the wiki there is still way more to be said and way more to be written and added
+
+41
+00:05:05,840 --> 00:05:17,840
+yeah looking at the keitai phones and the games that were on these phones they weren't really here in
+
+42
+00:05:17,840 --> 00:05:27,120
+the western part of the world at all they were over there in japan uh had a an immense catalog of games
+
+43
+00:05:27,120 --> 00:05:35,440
+and fantastic really really cool phones as well that um were very advanced for the time yeah um
+
+44
+00:05:35,440 --> 00:05:44,480
+on that note there was actually one phone that was released in the us uh i forgot what the model was
+
+45
+00:05:44,480 --> 00:05:53,920
+exactly but it was like the only dojo phone that was released here and they called it m mode instead of
+
+46
+00:05:53,920 --> 00:06:07,040
+like i mode but uh basically they wanted to uh actually found that out from there's the
+
+47
+00:06:08,800 --> 00:06:14,960
+video game history foundation they made that archive with all the information so i did a search on there
+
+48
+00:06:14,960 --> 00:06:22,960
+and then i found that that phone was actually talked about in one of the game magazines oh so that was like
+
+49
+00:06:22,960 --> 00:06:30,560
+really cool that was really cool so like that archive popped up and just learned something from it
+
+50
+00:06:30,560 --> 00:06:37,200
+pretty quickly um obviously it was a business oriented phone and you know that was the only phone and
+
+51
+00:06:37,840 --> 00:06:45,920
+after that uh it didn't do anything else with it so it kind of was a a flop
+
+52
+00:06:45,920 --> 00:06:56,640
+uh bad uh i've been watching all the uh the clips that you all post about uh the games that you have
+
+53
+00:06:56,640 --> 00:07:06,080
+preserved and it's so it's so cool to see all these games that were made for phones before we had the
+
+54
+00:07:06,080 --> 00:07:13,520
+iphone and android phones and things like that and the way they run they run really well many of them and
+
+55
+00:07:13,520 --> 00:07:22,400
+they're fantastic ports some of them uh many of them are original games so max maybe you can fill us in
+
+56
+00:07:22,400 --> 00:07:30,400
+on some of the notable finds that you have done in the past year 100 yeah there have been so many
+
+57
+00:07:30,400 --> 00:07:35,200
+crazy finds it's like i had a i was writing this whole notes for myself here and i realized just how
+
+58
+00:07:35,200 --> 00:07:42,000
+many games we found in the past year and actually recently we did pass the 800 mark for idmo games at
+
+59
+00:07:42,000 --> 00:07:47,600
+least so now over 800 i mode games are preserved so that's that's unbelievable because if you remember
+
+60
+00:07:47,600 --> 00:07:53,600
+only like two years ago it was like zero so that's the incredible growth but yeah on onto this more
+
+61
+00:07:53,600 --> 00:08:01,920
+specific games um let's see so i want to start from last may and go to the present so may uh we had the
+
+62
+00:08:01,920 --> 00:08:09,200
+easy web versions of the rockman.exe games preserved so if you remember uh megaman battle network had two
+
+63
+00:08:09,200 --> 00:08:15,360
+original entries on katai and we had preserved the imode versions but there is a competitor service
+
+64
+00:08:15,360 --> 00:08:21,280
+by kddi called easy web and that's actually where those two games were originally released
+
+65
+00:08:21,280 --> 00:08:29,040
+so thanks to the expertise of craze we were able to extract those games but also another side
+
+66
+00:08:29,040 --> 00:08:34,800
+application called battler's tower which had like online leaderboards but because that has a network
+
+67
+00:08:34,800 --> 00:08:39,600
+check we have not been able to crack it but it's kind of crazy that we found another copy of those
+
+68
+00:08:39,600 --> 00:08:46,800
+already rare games then a month later in june we partially preserved a game called oi katamari
+
+69
+00:08:46,800 --> 00:08:54,560
+damasi kun and if you remember the psp entry in the katamari series me and my katamari the end credits
+
+70
+00:08:54,560 --> 00:09:00,000
+has this mini game where you're rolling a katamari but it's like in this pixel style and it's in 2d
+
+71
+00:09:00,000 --> 00:09:05,600
+and you and you go side to side basically and you go along this long stage so basically they said what
+
+72
+00:09:05,600 --> 00:09:10,160
+if we just take that end credits mini game and make an entirely original game out of it by just adding a
+
+73
+00:09:10,160 --> 00:09:16,960
+bunch of you know original stages and that's what oi katamari damasi kun was so i i forget how many
+
+74
+00:09:16,960 --> 00:09:22,560
+stages we have in particular but it's not all of them but we do have a good amount so we did preserve
+
+75
+00:09:22,560 --> 00:09:29,920
+that in june and then in july if you remember from two years back naoya shinoda was the first guest on
+
+76
+00:09:29,920 --> 00:09:36,240
+here alongside with me um he scored a massive square enix imode game hall after like years of
+
+77
+00:09:36,240 --> 00:09:44,400
+negotiations so he preserved about 19 games um including a partial copy of before crisis final
+
+78
+00:09:44,400 --> 00:09:50,640
+fantasy 7 which uv will talk about later that's its own can of worms but also the full copy of
+
+79
+00:09:50,640 --> 00:09:57,440
+kingdom hearts coded dirge of cerberus lost episode now those two games are missing their sd card data
+
+80
+00:09:57,440 --> 00:10:03,840
+but actually as i speak right now um naoya is working on obtaining that sd card data but we also
+
+81
+00:10:03,840 --> 00:10:10,240
+found numerous kingdom hearts imode mini games um even final fantasy 7 snowboarding which was actually
+
+82
+00:10:10,240 --> 00:10:17,200
+the first imode game to have its leaderboards restored um thanks to uv again um and then also
+
+83
+00:10:17,200 --> 00:10:24,560
+even the full imode remake of of saiken densetsu which was a game boy game but they actually had a full like
+
+84
+00:10:24,560 --> 00:10:31,680
+color remake of it that was exclusive to imode and then let's see what else do we have here in july
+
+85
+00:10:31,680 --> 00:10:38,000
+um ellen preserved tetris dj which is a rhythm based tetris game uh yeah she she's extremely proud
+
+86
+00:10:38,000 --> 00:10:44,960
+of that one it's a really fun game in and of itself um in august uv preserved the entirety of professor
+
+87
+00:10:44,960 --> 00:10:50,720
+layton and the mansion of the deathly mayor that was an original professor layton um game and that was
+
+88
+00:10:50,720 --> 00:10:56,160
+it's actually canon to the series too which is very interesting um interestingly the phone that he
+
+89
+00:10:56,160 --> 00:11:02,240
+preserved it from it it was horribly burnt like the screen wasn't working so i said it looks like it
+
+90
+00:11:02,240 --> 00:11:07,440
+got burnt in a house fire but then all the gaming news websites they saw i said that and they reported
+
+91
+00:11:07,440 --> 00:11:13,520
+it like it was fact so now everyone thinks the phone did survive a house fire but we don't know for
+
+92
+00:11:13,520 --> 00:11:22,880
+sure um yeah then september uv once again preserves nine capcom imode games including an original imode
+
+93
+00:11:22,880 --> 00:11:28,480
+capcom rpg called your planet where it's like a spherical 3d overworld so it's kind of like
+
+94
+00:11:28,480 --> 00:11:33,440
+if you walked around a planet in mario galaxy that's kind of like your overworld basically with
+
+95
+00:11:33,440 --> 00:11:41,520
+traditional turn-based combat then december before crisis strikes again except this time the demo is
+
+96
+00:11:41,520 --> 00:11:48,560
+preserved from um an easy web phone by the one and only craze and it turns out that the data from
+
+97
+00:11:48,560 --> 00:11:55,280
+that can be combined with the documo copy as uv will also get into and yes i mean there's so many
+
+98
+00:11:55,280 --> 00:12:01,120
+more but if i had to pick one that was recent it would have to be an anonymous user preserving the
+
+99
+00:12:01,120 --> 00:12:08,640
+entirety of xenosaga pied piper this was this is a massive find because it was six separate apps but it
+
+100
+00:12:08,640 --> 00:12:14,560
+is a canonical story set i for i think it's before the first xenosaga game but people have been
+
+101
+00:12:14,560 --> 00:12:19,760
+searching this for this for so long that after i posted the news a lot of people told me that they
+
+102
+00:12:19,760 --> 00:12:25,760
+legitimately like broke into tears upon hearing it like i didn't realize that so many people had
+
+103
+00:12:25,760 --> 00:12:32,400
+wanted this game for so long so that was very recently earlier in march which is when we're recording
+
+104
+00:12:32,400 --> 00:12:37,840
+this but yeah it's very recent someone's already working on a fan translation of it that's amazing
+
+105
+00:12:38,720 --> 00:12:42,960
+it's it's just been an incredible time i could go on forever about the games but yeah those are some
+
+106
+00:12:42,960 --> 00:12:52,720
+of the best hits i mean just you're talking about games that have been locked away i think we maybe we
+
+107
+00:12:52,720 --> 00:12:58,240
+should take a little step back here because the when we talk about i mode and the phones that we're
+
+108
+00:12:58,240 --> 00:13:05,280
+talking about here they many of them are reliant on the network to be available and the i mode network
+
+109
+00:13:05,280 --> 00:13:14,000
+was shut down years ago um so you can no longer download these games uh and they are on phones
+
+110
+00:13:14,000 --> 00:13:21,680
+that have been stuffed in drawers essentially and and uh forgotten by the world for over a decade
+
+111
+00:13:21,680 --> 00:13:31,200
+exactly so finding them and being able to restore them and show them to people is just a wonderful
+
+112
+00:13:31,200 --> 00:13:38,160
+thing so thank you everyone for everything that you're doing here so tell me a bit about the latent
+
+113
+00:13:38,160 --> 00:13:46,480
+game that was saved there uh because that was um a a full latent game and you said it was canonical as
+
+114
+00:13:46,480 --> 00:13:54,000
+well yeah i'm not sure about this i guess the specific things i actually have not uh played a
+
+115
+00:13:54,000 --> 00:14:00,720
+latent game myself so i'm not the best person to be talking about this but um but it seems like it
+
+116
+00:14:00,720 --> 00:14:07,520
+i think it takes place between some of some of the ds games but yeah interestingly in comparison to
+
+117
+00:14:07,520 --> 00:14:12,160
+some of the other games like they could have made this a server-based game because as you said
+
+118
+00:14:12,160 --> 00:14:18,480
+um like the average size for an imode game if the audience doesn't know was one megabyte which is
+
+119
+00:14:19,040 --> 00:14:24,720
+that that's not very big basically so a lot of games had to resort to creative ways to i guess
+
+120
+00:14:24,720 --> 00:14:30,000
+overcome this limit so some of them as we have mentioned like rockman dash five islands or kingdom hearts
+
+121
+00:14:30,000 --> 00:14:36,000
+coded use the sd card for the extra data and some games like before crisis were jerks and decided to
+
+122
+00:14:36,000 --> 00:14:41,360
+just rely on a server for the whole thing but professor layton and as well as actually xenosaga like
+
+123
+00:14:41,360 --> 00:14:46,560
+i mentioned earlier they decided to split their game into separate apps so each so there i think
+
+124
+00:14:46,560 --> 00:14:52,080
+there's six chapters in professor layton in the mansion of deathly mayor and there's one app for
+
+125
+00:14:52,080 --> 00:14:58,640
+each chapter so basically that makes preserving it a little more difficult because you do have to find
+
+126
+00:14:58,640 --> 00:15:04,960
+a phone with all six chapters but lo and behold uv's luck you know it just happened to work and
+
+127
+00:15:04,960 --> 00:15:10,240
+he happened to find a phone with all six chapters on it and the same goes for xenosaga that was also
+
+128
+00:15:10,240 --> 00:15:18,720
+also three chapters but each chapter had to be split into two apps so that's how that game came out and
+
+129
+00:15:18,720 --> 00:15:24,720
+yeah they apparently released a remix version of it too um that was called a it was called it had the
+
+130
+00:15:24,720 --> 00:15:29,520
+same name but it had a remix at the end and that one actually has different puzzles slightly better
+
+131
+00:15:29,520 --> 00:15:35,840
+animations and even slightly different dialogues so we have not found that version yet but there is video
+
+132
+00:15:35,840 --> 00:15:41,280
+footage of it online but it's also interesting just think like the fact that they would re-release an
+
+133
+00:15:41,280 --> 00:15:50,000
+i-mode game you know it's interesting yeah those during the time i had a string of good luck i felt with phones
+
+134
+00:15:50,000 --> 00:16:05,360
+yeah and also um on top of that there is the uh you have the scratchpad and stuff so it's kind of like
+
+135
+00:16:05,360 --> 00:16:12,800
+dlc so scratchpad is like the storage space for the software and normally you'd use it for like
+
+136
+00:16:14,560 --> 00:16:19,440
+game state or you know whatever else like contacts or whatever else and you know whatever
+
+137
+00:16:19,440 --> 00:16:27,120
+software software to keep it state but since the size of the programs were pretty limited
+
+138
+00:16:28,240 --> 00:16:33,920
+and the scratchpad could be much larger basically what would happen is that they would download from
+
+139
+00:16:33,920 --> 00:16:40,000
+a server and cache that information in the scratchpad and then load it from that scratchpad
+
+140
+00:16:40,000 --> 00:16:51,680
+so basically if the app was downloaded but never ran then it would never have gotten that scratchpad
+
+141
+00:16:51,680 --> 00:17:01,520
+initialized and that's another issue as well with a lot of the software and titles so basically
+
+142
+00:17:01,520 --> 00:17:07,360
+basically there have been cases where we found you know incomplete titles
+
+143
+00:17:08,800 --> 00:17:15,760
+essentially and sometimes complete titles that were you know trial locked
+
+144
+00:17:18,160 --> 00:17:26,320
+um oh one thing i want to add is um so the remix version um i don't recall if you said this in the in
+
+145
+00:17:26,320 --> 00:17:31,440
+the same order but the remix version is for the professor laden there is not a remix version of
+
+146
+00:17:31,440 --> 00:17:38,720
+xenosaga pied piper yes yeah for a moment i thought that's what you said and i was like what no no i'm not
+
+147
+00:17:38,720 --> 00:17:42,240
+gonna drop that on you guys no way i'm gonna do that
+
+148
+00:17:46,720 --> 00:17:55,520
+so uv i wanted to dive into the the burnt phone here that max was talking about a bit uh and that
+
+149
+00:17:55,520 --> 00:18:03,040
+was the game where the latent game on it so when you when you got that phone what did you what did you
+
+150
+00:18:03,040 --> 00:18:11,040
+think was going to happen uh let's see so this is back i don't know how many months ago that was but
+
+151
+00:18:11,040 --> 00:18:16,080
+back when i was getting a string of a lot of lots and so i think roughly probably got two three hundred
+
+152
+00:18:16,080 --> 00:18:22,560
+phones in some lot that i got and a lot of those phones i mean you know they all look normally used
+
+153
+00:18:22,560 --> 00:18:27,680
+they all just kind of somebody used them in their lifetime right but this one in particular was just
+
+154
+00:18:27,680 --> 00:18:31,520
+kind of out and i actually had set it to the side for quite some time because it was not
+
+155
+00:18:31,520 --> 00:18:38,160
+booting correctly to which uh normally what i do is if i get a phone i'll try and turn it on see what
+
+156
+00:18:38,160 --> 00:18:42,960
+apps there are and then there's nothing of value i set it into a box that is kind of my junk box
+
+157
+00:18:42,960 --> 00:18:48,720
+right and then if there's things on there that i need i put it into a dump pile oh this phone i set
+
+158
+00:18:48,720 --> 00:18:54,800
+aside there because it didn't turn on at first but uh because we felt like we had to make sure and
+
+159
+00:18:54,800 --> 00:19:00,960
+normally when i do this i'll i'll put the phone in to get dumped and so ended up we actually dumped
+
+160
+00:19:00,960 --> 00:19:08,320
+this phone um before i even got it working and turning on uh and the condition of it was not
+
+161
+00:19:08,320 --> 00:19:14,240
+great uh and so this is kind of where the meme of a house fire phone came because actually if you look
+
+162
+00:19:14,240 --> 00:19:20,640
+at the phone physically it looks like it had some charring of some sort to it or or it was in a very
+
+163
+00:19:20,640 --> 00:19:27,200
+nasty place that gave it that type of look um and so you look at the phone you look at the connector
+
+164
+00:19:27,200 --> 00:19:34,400
+port for uh uh where the charger cable goes and our debug cable goes it was uh not so nice and so
+
+165
+00:19:34,400 --> 00:19:40,320
+with a little bit of cleaning and uh just was able to plug it in thankfully it turned on and we were able
+
+166
+00:19:40,320 --> 00:19:46,240
+to dump the contents but of course when i dumped it i had no idea what was on this phone that i was just
+
+167
+00:19:46,240 --> 00:19:53,520
+expecting there to be nothing but if i recall this is the phone that gave us lots more than just
+
+168
+00:19:53,520 --> 00:20:00,720
+latent as well i think it had tons of other namco and konami not konami but uh namco games on it as
+
+169
+00:20:00,720 --> 00:20:07,760
+well uh so it was quite a gold find for us especially with all the latent games and uh what ended up
+
+170
+00:20:07,760 --> 00:20:13,520
+happening at you know for whatever reason unbeknownst to me i i guess there was a bounty for the first
+
+171
+00:20:13,520 --> 00:20:19,120
+person who would find the rest of the chapters uh the professor latent games and
+
+172
+00:20:19,120 --> 00:20:24,160
+guy hits me up he's like hey you got fifteen hundred dollars to your name and i'm like i'm
+
+173
+00:20:24,160 --> 00:20:30,480
+sorry what that's like hey he's like here's fifteen hundred dollars and i was like yeah that's crazy
+
+174
+00:20:30,480 --> 00:20:36,640
+first off why you have a bounty for that but i mean loyal fans what can we say i'm sure somebody
+
+175
+00:20:36,640 --> 00:20:42,560
+would be willing to put up a bounty for before crisis or something right but latent fans um
+
+176
+00:20:43,360 --> 00:20:48,400
+so yeah i met a bounty and then i just didn't feel right for just what i do is just i bought a
+
+177
+00:20:48,400 --> 00:20:55,520
+lot of phones i just happened to find it uh so sure most people know but we ended up donating that
+
+178
+00:20:55,520 --> 00:21:00,800
+money out to hit save uh just because it made more sense uh for it to go somewhere and be used
+
+179
+00:21:00,800 --> 00:21:05,920
+besides me just sitting on it and not really needing the money because we're already spending our
+
+180
+00:21:05,920 --> 00:21:11,520
+own money to buy these lots so at the end of the day if uh if it goes somewhere else and gets used better
+
+181
+00:21:11,520 --> 00:21:17,120
+so it's a better cause it's really really appreciated so i wanted to thank you in person
+
+182
+00:21:17,120 --> 00:21:22,800
+as well so thank you no worries no worries but yeah that's kind of the story of that phone i mean
+
+183
+00:21:22,800 --> 00:21:28,240
+and i don't remember who it was but there was one person in the discord that kind of said oh it looks
+
+184
+00:21:28,240 --> 00:21:32,880
+like a house fire like it survived a house fire or something like that and somehow every new story
+
+185
+00:21:32,880 --> 00:21:38,320
+just kind of picked up on that of that case because i think cosmo uh had put in his uh his uh
+
+186
+00:21:38,320 --> 00:21:43,920
+ex post of the saying look like it survived a house fire and therefore everybody kind of went
+
+187
+00:21:43,920 --> 00:21:49,360
+off on that and so it's now deemed the house fire phone so we'll never forget it
+
+188
+00:21:52,160 --> 00:21:58,560
+that's awesome now i will say that i think it is quite obvious uh i think most of us honestly we
+
+189
+00:21:58,560 --> 00:22:04,080
+look for these type of phones uh because somehow they always end up giving us the best things uh
+
+190
+00:22:04,080 --> 00:22:08,160
+they went through a hard life and somehow if they went through a hard life they normally have some
+
+191
+00:22:08,160 --> 00:22:12,560
+goods on them and that's kind of panned out to be honest i feel like every time i've seen a phone that
+
+192
+00:22:12,560 --> 00:22:18,960
+snapped in half they sometimes have something on them a lot of reason for that is because
+
+193
+00:22:18,960 --> 00:22:27,680
+if the phone is broken it's difficult to initialize the data yeah yeah like you can't just wipe it so
+
+194
+00:22:27,680 --> 00:22:33,440
+that's uh that yeah that's true yeah that makes a lot of sense
+
+195
+00:22:36,240 --> 00:22:40,320
+so with all these games and the data that you preserve from these phones
+
+196
+00:22:42,160 --> 00:22:48,000
+stephanie you're working on a project to actually be able to play these games not on the phones but
+
+197
+00:22:48,000 --> 00:22:56,000
+on a computer so can you tell us a bit about squirrel jme and how it works and and the work you've
+
+198
+00:22:56,000 --> 00:23:05,280
+been doing in the past year yeah so squirrel jme is a java me 8 virtual machine which basically
+
+199
+00:23:06,800 --> 00:23:14,080
+there's your desktop java and java me is basically a subset of that so much smaller for embedded
+
+200
+00:23:14,080 --> 00:23:22,800
+devices like phones iot devices you know like fridges and stuff like that and basically these
+
+201
+00:23:22,800 --> 00:23:27,600
+phones are kind of just like the extension of that like what could run on like a fridge
+
+202
+00:23:27,600 --> 00:23:39,760
+or something like that right so pretty much from that the things that i've been doing is that
+
+203
+00:23:41,440 --> 00:23:49,440
+a lot of the times with these older games is that they're made for older phones and devices
+
+204
+00:23:49,440 --> 00:24:00,960
+right and there's a lot of assumptions about kind of like how the processor acts and so i mean not to
+
+205
+00:24:00,960 --> 00:24:09,760
+kind of complicate things but basically we've advanced in cpu technology so you have like
+
+206
+00:24:10,560 --> 00:24:17,840
+16 core cpus now with hyper threading and stuff like that you know super duper gpus
+
+207
+00:24:18,800 --> 00:24:26,320
+and the thing is these phones back then one thing is that they just have one single cpu
+
+208
+00:24:27,280 --> 00:24:35,440
+just executing everything you know just next to each other right code wise
+
+209
+00:24:36,320 --> 00:24:43,200
+and one of the big issues with that is that because of the advances in technology
+
+210
+00:24:44,000 --> 00:24:53,120
+that a lot of this older software runs differently if you were to run it today on modern cpus and modern jvms
+
+211
+00:24:54,000 --> 00:25:01,920
+because everything's just kind of like a moving target so my goal with squirrel jamie is essentially
+
+212
+00:25:01,920 --> 00:25:12,720
+to have kind of like a snapshot of sorts so that you can like experience these games right and
+
+213
+00:25:12,720 --> 00:25:24,320
+essentially just be able to play them for example so with regards to that uh there's for example the megaman
+
+214
+00:25:24,320 --> 00:25:36,640
+games and then there's also like tetris game i believe as well where essentially it will just break if you try
+
+215
+00:25:36,640 --> 00:25:44,720
+running it on kind of like an environment that it wasn't made for it just won't run properly
+
+216
+00:25:46,240 --> 00:25:53,120
+and for squirrel jamie i kind of like force it into that box to where
+
+217
+00:25:53,120 --> 00:26:03,280
+where it's closer to how things were back in the early 2000s in the mid 2000s and that like increases
+
+218
+00:26:03,280 --> 00:26:10,240
+compatibility with the software and that's a lot of the stuff that i've been doing in the past year
+
+219
+00:26:10,240 --> 00:26:15,280
+is uh pretty much kind of like that
+
+220
+00:26:18,080 --> 00:26:22,080
+you know very hard integration
+
+221
+00:26:24,720 --> 00:26:34,000
+so i know in previous podcasts we've been we've talked about the um sdk i believe it was i can't
+
+222
+00:26:34,000 --> 00:26:39,920
+remember what it was exactly but yes exactly the sdk emulator so this is
+
+223
+00:26:39,920 --> 00:26:47,680
+the um uh what you're creating here is something that is way more robust way more performant
+
+224
+00:26:48,240 --> 00:26:57,680
+yeah and yeah just available for more people yeah basically uh you'll be able to at some point
+
+225
+00:26:57,680 --> 00:27:04,080
+you know use a game pad with things and play with it because the sdk is just it's made for developers
+
+226
+00:27:05,040 --> 00:27:10,000
+it was never intended to be used you know to actually play the games
+
+227
+00:27:11,840 --> 00:27:22,000
+and you know i am hoping to get like better audio support more performant audio support and kind of just
+
+228
+00:27:22,000 --> 00:27:31,280
+like making it a much better experience of course you know that stuff takes time so i'm hoping this year
+
+229
+00:27:31,280 --> 00:27:40,320
+i can get something which it'll be interesting um you can actually sort of do things now with the
+
+230
+00:27:40,320 --> 00:27:47,680
+standalone version which does actually kind of run stuff so that's pretty neat so that's a call to
+
+231
+00:27:47,680 --> 00:27:56,960
+action to any java developers who love to work on audio to come and help out yeah basically
+
+232
+00:27:57,680 --> 00:28:06,720
+if there's any audio so of course audio is not like the priority right now so that'd be a little
+
+233
+00:28:06,720 --> 00:28:12,640
+bit more later on because right now the priority is kind of just getting the more important bits if that makes
+
+234
+00:28:12,640 --> 00:28:23,760
+sense so that's great um i see here in our podcast notes as well something about nano coat
+
+235
+00:28:23,760 --> 00:28:30,800
+you want to talk about that yeah so nano coat is the virtual machine i'm working on that is written in c
+
+236
+00:28:30,800 --> 00:28:39,680
+and that would be running on retro arc for example and that would be running on say you know your phone
+
+237
+00:28:41,120 --> 00:28:48,880
+or your desktop or maybe even like the ps2 your 3ds because uh retro arc is kind of like on everything
+
+238
+00:28:50,160 --> 00:28:56,560
+so i am part of retro arc team you know it's mostly just volunteers for the most part
+
+239
+00:28:57,520 --> 00:29:05,840
+but it's basically the native port and it's kind of like so i have spring code which is written in java
+
+240
+00:29:05,840 --> 00:29:12,960
+and that's kind of like the baseline virtual machine that i wrote initially you know completely
+
+241
+00:29:12,960 --> 00:29:21,520
+in java and now i'm working on a native c1 that'll be more portable and cross-platform to where
+
+242
+00:29:21,520 --> 00:29:29,360
+you don't need a host virtual machine to actually run the virtual machine so essentially you know you
+
+243
+00:29:29,360 --> 00:29:37,680
+can run it on a 3ds or your desktop or your phone and then you won't need to have this very huge
+
+244
+00:29:38,320 --> 00:29:47,600
+cumbersome java installation just to be able to play the software and the thing with the sdk emulator is
+
+245
+00:29:47,600 --> 00:29:54,080
+that you also have to have that you know cumbersome desktop java to be able to run stuff
+
+246
+00:29:55,840 --> 00:30:06,320
+so essentially nano code you know nano being small and it's essentially just going to be a leaner virtual
+
+247
+00:30:06,320 --> 00:30:15,680
+machine so this is going to be a very user-friendly method of being able to play these games going forward
+
+248
+00:30:15,680 --> 00:30:24,320
+yeah or that's the goal at least yeah that's the goal and if you're using like the uh retroarch front
+
+249
+00:30:24,320 --> 00:30:33,760
+end then uh there'll be of course like controller support and then i'll have to figure out like
+
+250
+00:30:33,760 --> 00:30:42,240
+save states and stuff like that which will be interesting because java itself doesn't really
+
+251
+00:30:42,240 --> 00:30:52,880
+lend itself to such things but i think i can make that work uh that i am very very excited to see
+
+252
+00:30:53,760 --> 00:31:00,720
+how you progress with this because that would make it um a lot easier for for people to actually try
+
+253
+00:31:00,720 --> 00:31:08,640
+these out the games that you have preserved and um yeah make make some deep dive videos on them and
+
+254
+00:31:08,640 --> 00:31:18,400
+enjoy them yeah but it does involve lots of uh research yeah but like most of the time
+
+255
+00:31:20,320 --> 00:31:26,240
+my time is spent just like researching and then developing and then also refactoring because
+
+256
+00:31:27,200 --> 00:31:36,240
+because this is such a big complex project you know it's the you have like the 95 of projects
+
+257
+00:31:36,240 --> 00:31:43,920
+this is like the five percent of projects where no other project kind of how you would do that applies
+
+258
+00:31:44,400 --> 00:31:49,120
+so everything has to be done differently and i know
+
+259
+00:31:51,120 --> 00:31:55,920
+i've said that you know squirrel jamie would be out like last year this year but the thing is
+
+260
+00:31:56,720 --> 00:32:02,880
+you know i do work but also as well there is a lot of research and making sure that everything's done
+
+261
+00:32:02,880 --> 00:32:10,960
+right the first time right the first time you know so that way it's easy when things get broke they're
+
+262
+00:32:10,960 --> 00:32:22,240
+easy to fix which you know they are thankfully yeah so and also as well um to kind of get like that
+
+263
+00:32:22,240 --> 00:32:32,240
+kind of experience where it doesn't like frustrate you to use it if that makes sense
+
+264
+00:32:35,040 --> 00:32:41,600
+yeah yeah i think that makes a lot of sense and i i love that you're working with the retro art team
+
+265
+00:32:41,600 --> 00:32:47,840
+and trying to make it more user friendly but i absolutely understand there's a lot of research going
+
+266
+00:32:48,640 --> 00:32:57,520
+going into this project and you do have a day job as well yeah which is uh working on medical devices so
+
+267
+00:32:58,960 --> 00:33:06,480
+very different very different yeah and also pretty important so and uh
+
+268
+00:33:06,480 --> 00:33:17,840
+uh sometimes i get off work and you know i'm kind of tired so totally get that yeah but thanks have
+
+269
+00:33:17,840 --> 00:33:26,640
+been going well that's awesome so what have been the the most fun thing that you have done in squirrel jamie
+
+270
+00:33:26,640 --> 00:33:38,480
+um lately um most thing the thing that you think either a quirky thing that you finally figured out
+
+271
+00:33:38,480 --> 00:33:46,400
+or something that made it run better or something like that um there's actually something silly
+
+272
+00:33:46,400 --> 00:33:57,840
+uh it turns out that i had well if you knew java bytecode there is an instruction called table switch
+
+273
+00:33:59,360 --> 00:34:00,480
+which is basically
+
+274
+00:34:02,960 --> 00:34:10,800
+a jump table of one two three four five so say like if one go to this address if two go to this address
+
+275
+00:34:10,800 --> 00:34:22,480
+etc right and uh that was implemented incorrectly um i was running some dojo software which ended up crashing
+
+276
+00:34:22,480 --> 00:34:31,040
+uh because uh i was running it in spring coat which is very uh pedantic about everything right
+
+277
+00:34:32,160 --> 00:34:36,560
+which that's the purpose of it so this one dojo software kind of just
+
+278
+00:34:38,160 --> 00:34:43,520
+broke and then it's just like oh i implemented it wrong
+
+279
+00:34:43,520 --> 00:34:52,320
+oops oops that's great that's great to find though um yeah and it's just like it worked
+
+280
+00:34:53,200 --> 00:35:01,120
+for five years without issues and just this one random dojo software just breaks it
+
+281
+00:35:02,560 --> 00:35:06,400
+that's funny it's it's hilarious i love that
+
+282
+00:35:06,400 --> 00:35:21,360
+so yeah it's just like uh kind of like checking all this dojo software is kind of just like
+
+283
+00:35:22,160 --> 00:35:31,040
+interesting and kind of just has improved squirrel jamie in general so and this also helps out you know
+
+284
+00:35:31,040 --> 00:35:39,680
+western software as well like the mid p games because it just you know it's more surface area for testing
+
+285
+00:35:41,840 --> 00:35:47,440
+and i guess probably one of the most important things is like testing and making sure things work
+
+286
+00:35:49,120 --> 00:35:55,040
+yeah yeah for sure i mean you can you can implement things but if they don't work they don't
+
+287
+00:35:55,040 --> 00:36:00,720
+work so yeah testing is really important yeah and implementation wise i do kind of
+
+288
+00:36:01,040 --> 00:36:10,560
+uh fail fast which is a programming term to where when you encounter a failure state or an unknown or
+
+289
+00:36:10,560 --> 00:36:19,120
+undefined state then the program terminates so essentially that means
+
+290
+00:36:20,880 --> 00:36:27,840
+squirrel jamie when it knows it's about to enter an unknown program state then it'll just terminate right
+
+291
+00:36:27,840 --> 00:36:39,440
+there rather than continuing which makes things easier to buck to debug easier to implement because i know exactly where that happened and
+
+292
+00:36:42,560 --> 00:36:44,240
+that has kind of just like
+
+293
+00:36:47,120 --> 00:36:54,160
+made things so much easier than doing stuff like game specific hacks and stuff like that
+
+294
+00:36:54,160 --> 00:37:04,240
+that which is uh you know untenable when you have thousands and thousands of titles yeah yeah you want to
+
+295
+00:37:05,520 --> 00:37:09,840
+you want to focus on what what gets most of them over the finish line there yeah pretty much
+
+296
+00:37:11,440 --> 00:37:18,560
+this is awesome so um squirrel jamie where we at hit save we're super happy to
+
+297
+00:37:18,560 --> 00:37:27,120
+uh help with some of the funding for the the development here so i'm super happy to hear about all the yeah and
+
+298
+00:37:27,120 --> 00:37:35,920
+thank you so much progress here it's it's super fun we we love open source projects and yeah we we of course utilize
+
+299
+00:37:35,920 --> 00:37:41,840
+a ton of open source projects ourselves as well so seeing the progress here is fantastic so thank you so much
+
+300
+00:37:41,840 --> 00:37:50,160
+and the funding's been put to good use it's uh being used for the cicd which is basically just
+
+301
+00:37:50,880 --> 00:37:56,640
+constantly building and then testing squirrel jamie with all the tests i wrote you know to make sure
+
+302
+00:37:56,640 --> 00:38:05,040
+things don't just break out of nowhere and that's been making sure that you know things continue to
+
+303
+00:38:05,040 --> 00:38:15,360
+progress well not break and it's actually kind of difficult because even though i'm an open source
+
+304
+00:38:15,360 --> 00:38:28,400
+project you know run by a single person i kind of appear to be like a large i mean it is a large project but
+
+305
+00:38:28,400 --> 00:38:39,200
+like resource and usage wise it's very rare for a project you know as mentioned previously
+
+306
+00:38:40,000 --> 00:38:48,000
+and it's kind of hard to actually find companies that are actually even willing to even help out
+
+307
+00:38:49,120 --> 00:38:57,680
+you know so i'm really glad that you at hit save have helped out so really helps
+
+308
+00:38:58,400 --> 00:39:05,600
+yeah we we love it and so so thank you again thank you i wanted to uh dive into
+
+309
+00:39:07,280 --> 00:39:16,480
+the tetris dj game ellen if you're uh if you can explain this a bit i i because it doesn't make sense
+
+310
+00:39:16,480 --> 00:39:23,840
+to me in my head how does a tetris rhythm game work okay so there are a few things to mention about
+
+311
+00:39:23,840 --> 00:39:31,360
+the game the way that it was found was actually kind of incredible but also not incredible basically
+
+312
+00:39:31,360 --> 00:39:36,960
+i was just looking i took the debug cable i plugged it into every single phone i had
+
+313
+00:39:37,600 --> 00:39:43,280
+this one phone lit up which i did not expect because it was a casio phone and usually only the
+
+314
+00:39:43,280 --> 00:39:52,080
+nec and panasonic phones light out and light up turns out casio casio phones were made by nec
+
+315
+00:39:52,080 --> 00:39:59,440
+in the later years so it was actually just an nec phone i could not open it so i extracted the data
+
+316
+00:39:59,440 --> 00:40:07,600
+like it was an nec phone and it had tetris dj uh what is tetris dj tetris dj uh is a game
+
+317
+00:40:08,400 --> 00:40:14,560
+that includes a dj mode so you can play regular tetris in it as well in the dj mode the goal is to
+
+318
+00:40:14,560 --> 00:40:20,720
+drop the pieces on the beat and if you drop the pieces on the beat you get extra points
+
+319
+00:40:22,480 --> 00:40:30,400
+that's basically it you can kind of emulate this in um the uh softbank proprietary mexa emulator
+
+320
+00:40:30,400 --> 00:40:38,800
+however there is a good deal of lag that makes it a bit tricky to play
+
+321
+00:40:41,200 --> 00:40:42,560
+maybe i could try running it
+
+322
+00:40:44,720 --> 00:40:50,960
+that could be interesting because uh the softbank games though those aren't doja they're actually
+
+323
+00:40:50,960 --> 00:40:59,280
+closer to mid p and there are already some other emulation projects that can run
+
+324
+00:40:59,920 --> 00:41:08,000
+a few of the games from softbank the only problem is they can't emulate the audio so tetris dj with no
+
+325
+00:41:08,000 --> 00:41:15,520
+audio is a lot less fun i bet just uh make up the music in your head
+
+326
+00:41:17,920 --> 00:41:23,200
+have a game boy next to you maybe uh play some tetris tunes yeah
+
+327
+00:41:23,200 --> 00:41:34,080
+so i wanted to dive into before crisis because that's a game that has been talked about in
+
+328
+00:41:34,080 --> 00:41:44,080
+multiple of these podcasts and uv you have been um a star here essentially making sure that that was
+
+329
+00:41:44,080 --> 00:41:47,840
+preserved properly and you also have some um
+
+330
+00:41:47,840 --> 00:41:55,920
+uh you've had some challenges preserving some server-based imode games um which obviously
+
+331
+00:41:55,920 --> 00:41:59,200
+before crisis comes in there so can you tell us a bit about that
+
+332
+00:41:59,200 --> 00:42:05,840
+yeah so uh i mean what isn't there not to say about before crisis i think
+
+333
+00:42:07,200 --> 00:42:12,560
+is it probably the most recognizable imode game probably it's probably the true statement i would
+
+334
+00:42:12,560 --> 00:42:19,280
+say so yes um before crisis is one of those games that everybody kind of knows about everybody wants
+
+335
+00:42:19,280 --> 00:42:25,120
+to play uh kind of almost to the vein of xeno saga but just not with the final fantasy name attached to
+
+336
+00:42:25,120 --> 00:42:32,560
+it is uh thanks to naya as we spoke earlier that he was able to find a copy from us so you see that
+
+337
+00:42:33,120 --> 00:42:37,840
+we even have the ability of uh looking at the game today or even trying to preserve it
+
+338
+00:42:38,720 --> 00:42:45,920
+um and that's honestly kind of where my story starts um this is kind of how i came into working on this
+
+339
+00:42:45,920 --> 00:42:52,640
+is really that uh now you have preserved them and i just so happened to get uh recommended
+
+340
+00:42:52,640 --> 00:42:59,920
+um something from cosmo uh a post he made that hey we preserved all these amazing square enix games
+
+341
+00:42:59,920 --> 00:43:05,760
+but the one that everybody wants is uh before crisis just doesn't boot doesn't run you know
+
+342
+00:43:05,760 --> 00:43:13,520
+it has a lot of issues inside of the sdk emulator today and so um correct me if i'm wrong but i think prior
+
+343
+00:43:13,520 --> 00:43:21,040
+to uh before crisis uh nobody on the team has really tried to work on reviving any of the server
+
+344
+00:43:21,040 --> 00:43:29,600
+mode games or server reliant games um there so i think that's the case yeah that was the case
+
+345
+00:43:29,600 --> 00:43:38,400
+yeah 100 it is and so yeah i mean not to say that it's my forte but i mean i've been doing
+
+346
+00:43:38,400 --> 00:43:44,720
+fan translations and reverse engineering for roughly like a decade now and uh one of my ultimate goals
+
+347
+00:43:44,720 --> 00:43:50,720
+at the end of the day has always been to bring back a certain uh mmo called tales of attorney online
+
+348
+00:43:50,720 --> 00:43:57,600
+and so i've dabbled uh quite a lot into reverse engineering network protocols and um honestly
+
+349
+00:43:57,600 --> 00:44:03,840
+i i wanted an easier project uh for something to work on because working on mmo is kind of a next
+
+350
+00:44:03,840 --> 00:44:11,120
+level reverse engineering project and that's kind of where these not simple but more simplistic uh
+
+351
+00:44:11,120 --> 00:44:18,320
+mobile online reliant games come into place um so the first story with uh before crisis really
+
+352
+00:44:18,320 --> 00:44:22,960
+started with uh us just trying to get the game to boot because the second you even boot the game it
+
+353
+00:44:22,960 --> 00:44:28,240
+automatically goes in and and tries to make a bunch of network requests and start downloading data of
+
+354
+00:44:28,240 --> 00:44:34,720
+that nature and so um really trying to figure out first off uh what data it's requesting uh what type
+
+355
+00:44:34,720 --> 00:44:41,440
+of data is even trying to download and so um what ends up being is that just uh to start off the game
+
+356
+00:44:41,440 --> 00:44:47,280
+there's roughly like five to eight packets depending if that's a new uh new register person or a saved
+
+357
+00:44:47,280 --> 00:44:52,960
+game um that it will go through to some authentication checks make sure you have enough money to play the
+
+358
+00:44:52,960 --> 00:44:59,600
+game they'll start downloading some files um that are kind of like the main menu files that it needs to be
+
+359
+00:44:59,600 --> 00:45:07,600
+able to load the menu uh then it will get your saved data which that saved data is all encrypted as well
+
+360
+00:45:07,600 --> 00:45:12,560
+uh and so trying to figure out everything that this game did was just kind of a mess at first
+
+361
+00:45:14,000 --> 00:45:22,080
+one of the beauties of working on this though is thankfully that um we sometimes get lucky that the
+
+362
+00:45:22,080 --> 00:45:28,160
+games we reverse engineer for the k-type games they're not obfuscated and what that means is that
+
+363
+00:45:28,160 --> 00:45:33,520
+we can get in and look at the code and we have the original naming scheme of every function and that they
+
+364
+00:45:33,520 --> 00:45:38,720
+use to make these games and thankfully before crisis is one of those games where it was not
+
+365
+00:45:39,840 --> 00:45:45,200
+obfuscated in any ways that significantly speeds up the process of knowing what function is doing
+
+366
+00:45:45,200 --> 00:45:51,040
+what so if they name a function and it says download save well i know that function is downloading the
+
+367
+00:45:51,040 --> 00:45:56,880
+save data right so other games they'll be obfuscated where they'll just be a single letter character
+
+368
+00:45:56,880 --> 00:46:02,320
+called a capital a lowercase a capital b capital b or something like that right and so
+
+369
+00:46:02,320 --> 00:46:08,800
+now you have no idea what these do until you really dig deep to figure it out but uh four
+
+370
+00:46:08,800 --> 00:46:15,920
+crisis was nice to us in that ways so i think it was literally maybe only like a day or two it took
+
+371
+00:46:15,920 --> 00:46:21,760
+me to get to the main menu of the game took a bunch of figuring out how the file system worked in that
+
+372
+00:46:21,760 --> 00:46:29,040
+game which i know stephanie kind of spoke on regarding uh the sps before real briefly before
+
+373
+00:46:29,040 --> 00:46:37,920
+crisis does the same thing it chunks up the sp and stores certain types of data in the sp for example
+
+374
+00:46:37,920 --> 00:46:43,680
+the first slot of that sp is always the main menu data and it will never change it will always be
+
+375
+00:46:43,680 --> 00:46:49,200
+that thankfully unless there's a new version of that main menu data it'll always be that but as you go
+
+376
+00:46:49,200 --> 00:46:54,240
+down through the chunks that were allocated you find out that some chunks were reused for multiple
+
+377
+00:46:54,240 --> 00:47:00,800
+purposes like we have chunks that are for maps we have chunks that are for uh media we have chunks
+
+378
+00:47:00,800 --> 00:47:07,680
+that are for uh music things of that nature and so those constantly get overwritten deleted reused and
+
+379
+00:47:07,680 --> 00:47:13,440
+so we only have a limited amount of data that we actually get out of before crisis specifically
+
+380
+00:47:14,320 --> 00:47:19,120
+so thankfully we were lucky enough obviously to have an sp that had some data in it
+
+381
+00:47:19,680 --> 00:47:25,600
+so we have the main menu data which allowed me to finally get past a bunch of the network requirements
+
+382
+00:47:25,600 --> 00:47:31,520
+and get the game actually booting into the main menu um once figured that out we're able to realize
+
+383
+00:47:31,520 --> 00:47:37,760
+okay what data do we have today because that was the next problem is what data do we have once we
+
+384
+00:47:37,760 --> 00:47:44,160
+figured out what type of data we actually have um in the sp we were then able to realize okay
+
+385
+00:47:44,160 --> 00:47:50,880
+okay the last person or the last person who played this game they stopped at um the reno training
+
+386
+00:47:50,880 --> 00:47:56,160
+mission so they played the reno training mission and that was the last thing they ever did on that
+
+387
+00:47:56,160 --> 00:48:03,440
+game therefore that is the only thing we are able to get working today uh inside of before crisis and so
+
+388
+00:48:04,160 --> 00:48:11,360
+this is now the story of before crisis is there are roughly three to four hundred different types of
+
+389
+00:48:11,360 --> 00:48:18,640
+files based off of my estimates that this game needs actually have a full operating game um
+
+390
+00:48:19,680 --> 00:48:26,400
+unfortunately that means we need roughly three to four hundred phones worth of data and that's not
+
+391
+00:48:26,400 --> 00:48:33,840
+accounting for the fact that we are bound to get duplicates of the same data right and so this is kind of
+
+392
+00:48:33,840 --> 00:48:40,000
+where we are now trying to piece together things and trying to create our own things and that's kind of where
+
+393
+00:48:40,000 --> 00:48:46,000
+i've um built a lot of tools to mitigate some of these issues knowing that we're never going to be able to
+
+394
+00:48:46,000 --> 00:48:52,240
+make this happen um so again we originally started off with only having the reno training mission
+
+395
+00:48:53,120 --> 00:48:59,520
+and from there i worked with nalia to kind of figure out um he was able to give me some ideas like hey
+
+396
+00:48:59,520 --> 00:49:07,360
+back in the day um the beta version of this game they had a map in the shimmer hq that they actually used for the
+
+397
+00:49:07,360 --> 00:49:12,720
+the battle area and i was like okay that's cool he was able to provide me some tile sets for that and
+
+398
+00:49:12,720 --> 00:49:19,360
+i was able to fully reverse engineer how the map files work in this game um that's on a byte to
+
+399
+00:49:19,360 --> 00:49:27,520
+byte level so hex right and so with that knowledge i can now build our own file or game compatible map
+
+400
+00:49:27,520 --> 00:49:34,080
+files for before crisis and theoretically i can build any map it i could put you on mars or whatever and i
+
+401
+00:49:34,080 --> 00:49:39,200
+i could put you in there and it would just load it because they think that's an original um you know
+
+402
+00:49:40,000 --> 00:49:46,640
+before crisis file at this point because i'm the one that created it pipe for pipe perfect so yeah you're
+
+403
+00:49:46,640 --> 00:49:55,280
+not just preserving the game you're you're be you're able to mod it um essentially yeah i mean pretty
+
+404
+00:49:55,280 --> 00:50:01,520
+much that's exactly uh what i ended up having to do is uh not only just for that we now have the ability
+
+405
+00:50:01,520 --> 00:50:08,720
+of making our own uh material files as well so the material files um real simply they're just a bunch
+
+406
+00:50:08,720 --> 00:50:14,800
+of animation data with images attached to them and so um really it's just figuring out how did the
+
+407
+00:50:14,800 --> 00:50:20,720
+animation system work and once we kind of figure that out we can now make those and so the whole
+
+408
+00:50:20,720 --> 00:50:27,120
+purpose around this again wasn't that we want to mod the game it's simply that we just i knew there's no
+
+409
+00:50:27,120 --> 00:50:31,920
+way we're ever going to get all this data to make this a real game and so with the more dumps we get
+
+410
+00:50:31,920 --> 00:50:38,080
+of the game it helps me understand more about the file system structure and bite-to-bite stuff of how
+
+411
+00:50:38,080 --> 00:50:44,720
+these individual files work which allows me to replicate these a lot better because we have source
+
+412
+00:50:44,720 --> 00:50:50,320
+material well we have pictures and videos of other stuff of the game that's been documented out there
+
+413
+00:50:50,320 --> 00:50:56,640
+that we can pull images from or something of that nature to then be able to inject them into the game
+
+414
+00:50:56,640 --> 00:51:03,360
+today and um you know we've already had majority of the text already translated into english at this
+
+415
+00:51:03,360 --> 00:51:08,640
+point as well so once we're ready uh for that we'll make sure everybody's able to play the game
+
+416
+00:51:08,640 --> 00:51:16,240
+because that's obviously the next step is ensuring um all the text can be done um let's see after that
+
+417
+00:51:16,240 --> 00:51:22,800
+um we had made some quick discoveries that um there are two extra apps with before crisis that come
+
+418
+00:51:22,800 --> 00:51:30,240
+with it one we call uh extra or really it's the weapon d mode which is a completely separate like
+
+419
+00:51:31,120 --> 00:51:36,880
+multiplayer style mode that was made in this game kind of almost like your pokemon go style where
+
+420
+00:51:36,880 --> 00:51:40,480
+you would travel the world and based off depending where you were at it would kind of give you a
+
+421
+00:51:40,480 --> 00:51:46,080
+different um was it like a different like enemies that would show up for you to attack or something
+
+422
+00:51:46,080 --> 00:51:50,960
+like that in that mode and that would all change the story that happens in that mode in particular
+
+423
+00:51:52,000 --> 00:52:00,000
+and then we also have um the golden saucer app as well which of course is famously just a bunch of
+
+424
+00:52:00,000 --> 00:52:06,960
+mini games uh related to final fantasy 7 so the boxing the snow boring um what are the ones that
+
+425
+00:52:06,960 --> 00:52:13,520
+have in there uh trogo racing as well of course so all that stuff's kind of in there and so as we
+
+426
+00:52:13,520 --> 00:52:19,440
+dug through those apps and i had to again figure out uh the network protocols reverse engineer how
+
+427
+00:52:19,440 --> 00:52:25,360
+they even got all their data in there how they're all sent uh and we're able to find out that hey we
+
+428
+00:52:25,360 --> 00:52:32,480
+do have some data um for this as well so we're able to bring back the arm wrestling mini game for
+
+429
+00:52:32,480 --> 00:52:38,160
+the golden saucer so that's fully functional as well and we even have the cross app launching working
+
+430
+00:52:38,160 --> 00:52:43,920
+correctly now which is amazing so you can load into the game completely just like you originally would
+
+431
+00:52:43,920 --> 00:52:48,480
+you can go into the golden saucer app or it was launched the golden saucer app actually and then
+
+432
+00:52:48,480 --> 00:52:52,800
+you'd be able to go into the mini game play it it would save your data just like you were just playing
+
+433
+00:52:52,800 --> 00:52:59,200
+the game would update how many uh what your high score was put on leaderboards things of that nature so
+
+434
+00:52:59,200 --> 00:53:05,440
+all that stuff's working um golden saucer apps not too bad i think we need probably about 20 files
+
+435
+00:53:05,440 --> 00:53:11,680
+for that to actually be fully complete um roughly and then weapon d mode is going to be another chunk
+
+436
+00:53:11,680 --> 00:53:17,440
+of data that we probably will never get because that is a mode that is actually highly undocumented
+
+437
+00:53:18,000 --> 00:53:22,480
+uh again since that's kind of more of a an asymmetrical multiplayer mode as well so
+
+438
+00:53:22,480 --> 00:53:30,560
+yeah exactly yeah i mean it's like the if i remember correctly the weapon d mode you had
+
+439
+00:53:30,560 --> 00:53:38,000
+mentioned it depends on your location right so it's like if you're in for example hokkaido which is
+
+440
+00:53:38,000 --> 00:53:45,680
+all the way up north in japan you will correspond to like icicle in in like the actual like in-game
+
+441
+00:53:45,680 --> 00:53:51,200
+ff7 world you know so like there are there are some things corresponding there and i guess
+
+442
+00:53:51,200 --> 00:53:57,520
+other detail i wanted to add was the whole cross app launching thing um if you remember earlier i had
+
+443
+00:53:57,520 --> 00:54:03,920
+mentioned oi katamari damasi-kun um that that's interesting spinoff of that 2d credits mini game
+
+444
+00:54:03,920 --> 00:54:09,360
+and that i think was the first uh game that we had preserved that had that functionality so basically
+
+445
+00:54:09,360 --> 00:54:14,400
+you would have that main application and then if you wanted to access those uh those extra levels it
+
+446
+00:54:14,400 --> 00:54:19,440
+would launch its own app and the app had a different name and that app would have like i don't know 10
+
+447
+00:54:19,440 --> 00:54:24,800
+different levels and you would and you would go into that so correct me if i'm wrong uv but i think that
+
+448
+00:54:24,800 --> 00:54:29,520
+game might have helped you i think i guess restore that kind of cross app thing because at least you
+
+449
+00:54:29,520 --> 00:54:37,920
+have an example now to work off of yeah in some ways what ended up being is that the doja sdk that we
+
+450
+00:54:37,920 --> 00:54:43,840
+particularly use today um the way it operates and some of the calls are a little bit different from when
+
+451
+00:54:43,840 --> 00:54:49,360
+they're natively on a phone so we just had to modify them so they would work and yeah uh katamari
+
+452
+00:54:49,360 --> 00:54:52,080
+katamari damasi was kind of the one that pointed that out to us
+
+453
+00:54:54,800 --> 00:55:00,400
+so i think that's kind of primarily the journey of before crisis day kind of really summed up i mean
+
+454
+00:55:00,400 --> 00:55:05,120
+it's kind of been the game we've all been wanting to work on and you know i talk about it how
+
+455
+00:55:05,680 --> 00:55:10,560
+hey we have this game working people can kind of play it in some way but um it is still
+
+456
+00:55:10,560 --> 00:55:16,640
+we don't have it publicly available for people to actually currently play on the server and that
+
+457
+00:55:16,640 --> 00:55:21,920
+really comes down to a couple things which is if i make it publicly available it's great because at
+
+458
+00:55:21,920 --> 00:55:28,000
+least people can go see what there is um what little of there is but really it's simply the matter of the
+
+459
+00:55:28,000 --> 00:55:32,880
+fact that we want at least when i've talked about we want something substantial to bring out and let
+
+460
+00:55:32,880 --> 00:55:41,520
+people do more so than just a single mission right and so this is um where the w51h uh copy of the game
+
+461
+00:55:41,520 --> 00:55:49,760
+came in which is from a completely different platform um which is brew so different than doja and the
+
+462
+00:55:49,760 --> 00:55:56,640
+way that game had worked is uh slightly different in the matter of fact that the brew platform from
+
+463
+00:55:56,640 --> 00:56:02,720
+my understanding doesn't have any limitations in terms of file systems uh file storage space so
+
+464
+00:56:02,880 --> 00:56:08,320
+it kind of just stored things more uncompressed and actually things look better because they're not
+
+465
+00:56:08,320 --> 00:56:14,240
+using gifs they're actually using uh bmps so they're actually a better image format and the files
+
+466
+00:56:14,240 --> 00:56:21,360
+are all structurally the same but also not the same because when you look at the network side of this
+
+467
+00:56:21,360 --> 00:56:26,960
+game it always sends out two different type of network calls one of them i call a common network call
+
+468
+00:56:26,960 --> 00:56:33,280
+and one of them might call a phone specific network call so the game is very aware of what type of phone
+
+469
+00:56:33,280 --> 00:56:40,160
+you are using at all given times and it will only request data for that specific phone so what that
+
+470
+00:56:40,160 --> 00:56:46,720
+means is that there are certain file types that are cross-compatible against all phone types regardless
+
+471
+00:56:46,720 --> 00:56:54,880
+if they're brew um easy web or kddi or even doja or yahoo for even i think there's a yahoo version
+
+472
+00:56:55,440 --> 00:57:01,760
+um and then there is the phone specific ones where again those files are only meant for certain
+
+473
+00:57:01,760 --> 00:57:10,160
+types of phones so the w51h um has both right so in the what it doesn't have an sp but in the file
+
+474
+00:57:10,160 --> 00:57:16,400
+system structure itself there are common files and there are the phone specific files the common files
+
+475
+00:57:16,400 --> 00:57:21,120
+are great i can drag and drop them into the current system they work and load just like we normally
+
+476
+00:57:21,120 --> 00:57:26,560
+would want them to but when it comes to the phone specific ones which are the ones that really
+
+477
+00:57:26,560 --> 00:57:35,280
+matters those are like our character images are a scenario data and our um character data so that's
+
+478
+00:57:35,280 --> 00:57:41,200
+going to be um how many characters are on their screen with the sprites their data like how much hp
+
+479
+00:57:41,200 --> 00:57:47,440
+they have attack power things of that nature right so all of these are more phone specific type because
+
+480
+00:57:47,440 --> 00:57:55,920
+they're different image formats is primarily what it comes down to and so knowing we now had the full
+
+481
+00:57:55,920 --> 00:58:03,680
+chapter one my job was to find a way to convert all of those files to work on doja because that is
+
+482
+00:58:03,680 --> 00:58:10,720
+the server system that we have working today and the best sdk with audio support that works today as well
+
+483
+00:58:12,000 --> 00:58:18,400
+now i would like to say i was fully successful with that but unfortunately i'm not um we are still
+
+484
+00:58:18,400 --> 00:58:25,920
+at a standstill with that i was primarily able to get let's say 80 of them converted with a lot of them
+
+485
+00:58:25,920 --> 00:58:32,800
+working today for example the fire material spell is a phone specific thing but i was able to convert
+
+486
+00:58:32,800 --> 00:58:39,680
+all of those files um that are inside of this proprietary file to work with the doja so what
+
+487
+00:58:39,680 --> 00:58:45,040
+that means is we now have the fire material which sounds crazy but again we now have one of the three
+
+488
+00:58:45,040 --> 00:58:52,720
+basic materials uh available now in the game so that gives us roughly four materials we now have access to
+
+489
+00:58:52,720 --> 00:59:02,480
+um that work but the biggest thing holding us back now is the bruise way of handling audio files
+
+490
+00:59:03,200 --> 00:59:09,680
+the audio files are handled completely different uh versus doja and unfortunately what that means is that
+
+491
+00:59:10,320 --> 00:59:19,120
+um even with me trying to what i like to say fake the data the game will still refuse to load any
+
+492
+00:59:19,120 --> 00:59:28,800
+um data regarding the scenario because it does not have the appropriate audio files in place and what
+
+493
+00:59:28,800 --> 00:59:34,880
+that just ends up happening is that the game just will refuse to work even though i've converted everything
+
+494
+00:59:34,880 --> 00:59:41,120
+inside of there we just simply do not have a method today to convert the audio formats between the two
+
+495
+00:59:41,120 --> 00:59:48,160
+so i've reached out to a couple people uh that are way more familiar with audio stuff than i am and
+
+496
+00:59:48,160 --> 00:59:52,800
+they're working on something so potentially maybe in the future we'll have a way of making this work
+
+497
+00:59:52,800 --> 00:59:59,760
+but as of right now the only way still today to play um final fantasy before crisis is the
+
+498
+01:00:00,640 --> 01:00:06,960
+emulator with no body support but it's getting there um so hopefully maybe by the i would like to say
+
+499
+01:00:06,960 --> 01:00:11,840
+by the end of the year that we'll definitely have uh the server available so at least people can play
+
+500
+01:00:11,840 --> 01:00:14,880
+chapter one or the prologue uh before crisis
+
+501
+01:00:17,200 --> 01:00:22,720
+this is really impressive work i mean not just reverse engineering the phones but reverse
+
+502
+01:00:22,720 --> 01:00:30,080
+engineering how it talks over the networks and and what's what the game is expecting to get back and
+
+503
+01:00:30,080 --> 01:00:40,960
+um reverse engineering how the game runs and uh also being able to uh modify it like you talked about
+
+504
+01:00:40,960 --> 01:00:47,440
+the maps you were able to recreate maps and you could create your own maps as well this is just fantastic
+
+505
+01:00:47,440 --> 01:00:53,200
+work yeah i appreciate it uh you know it's definitely been a team effort right i like to say everything's
+
+506
+01:00:53,200 --> 01:00:59,680
+me but um obviously now yeah there's he's the he is the well of knowledge when it comes to that game
+
+507
+01:01:00,480 --> 01:01:06,960
+and i know he has probably 10x the passion i do for that game even though mine is pretty high as well
+
+508
+01:01:07,920 --> 01:01:13,360
+uh so if there's ever any information i need or it's like there's some weird tidbits of stuff that i have
+
+509
+01:01:13,360 --> 01:01:19,680
+to do i can ask him and he provides it to me uh case in point is you never guess but most of the text
+
+510
+01:01:19,680 --> 01:01:26,720
+for that game comes from the server it's not stored locally so i have to ask now yeah to go hunt uh and
+
+511
+01:01:26,720 --> 01:01:31,440
+give me all the text that he finds from the videos or whatever that he gets from his sources and
+
+512
+01:01:32,560 --> 01:01:40,320
+really shout outs also to the gentleman who provided us the dump because he had also provided us a
+
+513
+01:01:40,320 --> 01:01:47,360
+lot of great videos uh that i don't think anybody's ever seen of that game that helped us uh bring in
+
+514
+01:01:47,360 --> 01:01:53,440
+knowledge of knowing how the game even works um like i never played the game so i don't know what
+
+515
+01:01:53,440 --> 01:01:58,800
+happens when i click this button right what happens after that and so if i know what happens i know what
+
+516
+01:01:58,800 --> 01:02:05,520
+i need to give the game right but if i don't know it really makes it my job harder and so having that
+
+517
+01:02:05,520 --> 01:02:12,320
+footage really uh speeds things up and so yeah it's been a great work um i mean real briefly i know i'm
+
+518
+01:02:12,320 --> 01:02:17,040
+the server guy but uh i work on a lot of other servers for stuff as well i know we kind of
+
+519
+01:02:17,040 --> 01:02:22,720
+mentioned final phase seven snowboarding leaderboards uh brought that back as well there's megaman
+
+520
+01:02:23,600 --> 01:02:30,480
+x1 leaderboards now if i recall at that point uh even the kingdom hearts side games i'll call them
+
+521
+01:02:30,480 --> 01:02:35,920
+so not the coded um all the avatar kingdom mini games all have their leaderboards in function as well at
+
+522
+01:02:35,920 --> 01:02:44,320
+this point um and then i think my biggest next one was uh sd gundam uh generations which is quite a
+
+523
+01:02:44,320 --> 01:02:49,360
+complex game that we were able to get reverse engineering working but again created a full
+
+524
+01:02:49,360 --> 01:02:55,200
+server for that game as well uh and now that one's fully preserved 100 functional and playable today
+
+525
+01:02:55,200 --> 01:03:05,360
+that's amazing and do you think you would be this far if the code had been obfuscated
+
+526
+01:03:07,680 --> 01:03:17,440
+uh probably not but i will tell you i worked on many games now at this point that you know i'll say 75
+
+527
+01:03:17,440 --> 01:03:23,680
+75 of the games i work on are probably obfuscated now but i've come in just such a way of finding the
+
+528
+01:03:23,680 --> 01:03:30,160
+stuff the functions the data the the code that i need to find it really doesn't bother me as much
+
+529
+01:03:30,160 --> 01:03:36,800
+as it did at first once you've looked at the code you kind of realize how a lot of these games work
+
+530
+01:03:36,800 --> 01:03:42,480
+you kind of now figured a lot of it out you can kind of just assume this is how it works and you
+
+531
+01:03:42,480 --> 01:03:48,560
+can find it really quickly so i think sd gundam was completely obfuscated if i recall and i was able
+
+532
+01:03:48,560 --> 01:03:55,440
+to make that one work um and i believe uh megamen x1 was as well but a lot of the square enix games
+
+533
+01:03:55,440 --> 01:04:04,320
+are not obfuscated um i think the biggest offender of that if i recall is konami or their games no i
+
+534
+01:04:04,320 --> 01:04:13,120
+lied it's namco it's namco is a problem yes because it was uh even the tales games i was looking at
+
+535
+01:04:13,120 --> 01:04:18,640
+recently which uh a big thing of mine uh they're all obfuscated and just trying to figure out how to
+
+536
+01:04:18,640 --> 01:04:25,680
+even get past the authentication checks in those games can be super complex um unfortunately but yeah
+
+537
+01:04:27,360 --> 01:04:37,040
+yeah um to the uh obfuscation point um i'm kind of like java bytecode and stuff like that is kind of like
+
+538
+01:04:37,040 --> 01:04:46,400
+natural to me so there have been a few times where uv has come to me like hey what does this do i'm just
+
+539
+01:04:46,400 --> 01:04:53,680
+like oh it does this this this and this is the input this is the output and it's like oh well
+
+540
+01:04:55,760 --> 01:05:01,360
+yeah i should mention i really never worked in java prior to working on katai stuff i'm not a java guy
+
+541
+01:05:01,360 --> 01:05:06,720
+i'm primarily a dotnet person but coding is coding at the end of the day and you kind of understand it
+
+542
+01:05:06,720 --> 01:05:12,480
+kind of quickly once you've seen code yeah um and so i was able to catch up pretty fast but yeah i
+
+543
+01:05:12,480 --> 01:05:19,120
+definitely still rely upon uh 70 here sometimes for some issues that i have yeah especially around like
+
+544
+01:05:19,120 --> 01:05:25,040
+some of the puzzles because i know yeah there is one you had me look at and it was like
+
+545
+01:05:26,800 --> 01:05:35,360
+i think it was cold stuff saga that one was a pain yeah it was like 400 lines in a single method and
+
+546
+01:05:35,360 --> 01:05:39,840
+it had like 100 switch cases or something like all these branches inside
+
+547
+01:05:43,040 --> 01:05:53,200
+and uh it was like if there was zero zero and zero zero zero zero yeah i think that was the one that you
+
+548
+01:05:53,200 --> 01:06:00,160
+said yeah there's a lot of servers that i've worked on that are not fully released as of yet because either
+
+549
+01:06:00,160 --> 01:06:06,960
+i've worked on them and then found out um we don't have data to make them work which is 99 of the case
+
+550
+01:06:07,760 --> 01:06:11,680
+you know it ends up being just unfortunately that when you want to play the game the game immediately
+
+551
+01:06:11,680 --> 01:06:19,280
+requests data that we no longer have and um tails is kind of a great point um we have data on the sp
+
+552
+01:06:19,280 --> 01:06:26,160
+the scratch pad for it to work but immediately when you boot up the game it wants the main menu data
+
+553
+01:06:26,160 --> 01:06:33,120
+and unfortunately the main menu data is overwritten um so whenever the last person who played this game
+
+554
+01:06:33,120 --> 01:06:38,240
+they didn't go back to the main menu when they quit the game they just exited a hard exit at the game
+
+555
+01:06:39,040 --> 01:06:44,960
+which saved all the data from when they were in the middle of the game so unfortunately we lose that
+
+556
+01:06:44,960 --> 01:06:49,040
+main menu data which means we can't even get into some of these games or even play them which is
+
+557
+01:06:49,680 --> 01:06:54,160
+why i have probably like 30 different servers that just sit vacant doing nothing for now
+
+558
+01:06:56,160 --> 01:07:03,440
+nothing yet yeah nothing yet exactly exactly we got a couple games on the horizon i'm hoping i can
+
+559
+01:07:03,440 --> 01:07:08,880
+resurrect some servers for uh kingdom hearts code is one of them that i have a partially working server
+
+560
+01:07:08,880 --> 01:07:15,120
+for just simply need the sd card data for that uh and then some other nice ones coming out eventually so
+
+561
+01:07:15,120 --> 01:07:26,800
+fantastic again fantastic work appreciate it um so i wanted to uh as we were talking about reverse
+
+562
+01:07:26,800 --> 01:07:34,560
+engineering and looking into things ellen you have some interesting stories about reverse engineering
+
+563
+01:07:35,280 --> 01:07:39,760
+the phones and dumping the chips and and doing all kinds of things
+
+564
+01:07:39,760 --> 01:07:50,080
+yes so uh this year or at the end of last year i managed to successfully recruit one of my friends
+
+565
+01:07:50,080 --> 01:07:54,960
+to the project it's someone who had actually been hearing about the project from me for a while but
+
+566
+01:07:55,360 --> 01:08:02,160
+at one point i opened up a phone that happens to have an adapter a chip adapter already made to be used
+
+567
+01:08:02,160 --> 01:08:07,120
+in a regular chip reader and i asked if you could help me with that because i'm not really the best at
+
+568
+01:08:07,120 --> 01:08:13,440
+soldering once he saw what we did with that phone he thought maybe i can do this with more phones and
+
+569
+01:08:13,440 --> 01:08:20,720
+so it grew and it grew and it grew the process of dumping the phone chips though is is complicated
+
+570
+01:08:21,760 --> 01:08:29,440
+and not just technically difficult but also physically difficult so for the phones that we cannot exploit
+
+571
+01:08:29,440 --> 01:08:38,080
+through a usb it's necessary to find the chip on the phone that contains the data and remove it now
+
+572
+01:08:38,080 --> 01:08:46,720
+these are bgas bga stands for ball grid array so rather than having the legs that stick out it has a
+
+573
+01:08:46,720 --> 01:08:53,200
+number of solder balls underneath the chip so you would need to heat up the motherboard so much
+
+574
+01:08:53,200 --> 01:09:02,640
+that all of those balls heat up and can turn into liquid solder which you can then scoop off now this
+
+575
+01:09:02,640 --> 01:09:08,480
+requires really quite high temperatures but not too high or else you'll burn and damage the chip
+
+576
+01:09:09,120 --> 01:09:17,440
+so the setup is usually we've got the motherboard that's clipped on uh with some helping hands and a hot
+
+577
+01:09:17,440 --> 01:09:25,680
+air gun pointing straight at the phone and you're just heating it up until it's ready and you have to
+
+578
+01:09:25,680 --> 01:09:35,920
+successfully detach every single ball if you miss one there's a possibility you've ruined the entire chip
+
+579
+01:09:36,480 --> 01:09:47,120
+just by missing one if that one ball had an important data point so it is very focused very challenging
+
+580
+01:09:47,680 --> 01:09:53,840
+incredibly grateful that my friend cubos has even been willing to do this at all because a lot of
+
+581
+01:09:53,840 --> 01:10:00,400
+people have not been that's probably part of what's um why there hasn't necessarily been more
+
+582
+01:10:00,400 --> 01:10:08,560
+research done on these phones because this physical dumping process is so intensive then to make things
+
+583
+01:10:08,560 --> 01:10:16,800
+worse um all of these chips almost all of the chips have epoxy covering underneath them so there's
+
+584
+01:10:16,800 --> 01:10:26,480
+an epoxy covering between the chip and the motherboard um they're in they are um given the epoxy for
+
+585
+01:10:26,480 --> 01:10:34,160
+durability which is important for mobile devices because when they are bouncing around in your pocket
+
+586
+01:10:34,880 --> 01:10:40,240
+and being used in other situations unlike a computer or a console that's just going to be staying in the
+
+587
+01:10:40,240 --> 01:10:47,600
+same spot they're going for maximum durability the only way this epoxy can be removed is also by heating
+
+588
+01:10:47,600 --> 01:10:56,560
+the chip to a high temperature and removing the uh the epoxy often this means taking the soldering iron
+
+589
+01:10:56,560 --> 01:11:04,080
+and heating it up and very carefully scraping it off again making sure that you don't damage any of the
+
+590
+01:11:04,080 --> 01:11:11,120
+pads on the chip because if you damage the wrong one even if it's just one you've ruined the chip and you
+
+591
+01:11:11,120 --> 01:11:21,280
+can't read anything amazingly uh cubus has dumped almost close to 100 chips perhaps and has only
+
+592
+01:11:21,920 --> 01:11:29,520
+uh had issues with maybe one or two that's amazing this is a very high success rate an incredible success rate
+
+593
+01:11:29,520 --> 01:11:39,600
+um and that's only the beginning so that's just getting a chip off of the motherboard but the thing
+
+594
+01:11:39,600 --> 01:11:50,240
+with these chips is that a lot of them were created in a proprietary manner just for these phones so you can't
+
+595
+01:11:50,240 --> 01:11:59,120
+find data sheets about these chips instead there's a lot of research and reverse engineering that is
+
+596
+01:11:59,120 --> 01:12:07,200
+necessary where you find chips that are similar adjacent um even if they don't have quite the
+
+597
+01:12:07,200 --> 01:12:13,440
+right match and so when the chips are similar but not the same there's a lot of guesswork that happens
+
+598
+01:12:13,440 --> 01:12:21,520
+in between so when cubus makes the chip adapters they're all inferences we don't actually know how
+
+599
+01:12:21,520 --> 01:12:27,600
+it's going to work until it's plugged in oftentimes there will be one wire that actually needs to go somewhere
+
+600
+01:12:27,600 --> 01:12:34,960
+else so you'll see lots of wire soldered on top of the adapter to connect various pins to one another
+
+601
+01:12:34,960 --> 01:12:43,920
+also um cutting various traces and such so why do we need the adapters it's because the most affordable
+
+602
+01:12:43,920 --> 01:12:55,840
+chip readers use a 48 pin dip dip zip socket let me say that again 48 pin dip zip socket so um the a lot of
+
+603
+01:12:55,840 --> 01:13:01,920
+the adapters that can read these chips directly the chip readers cost literally thousands of dollars
+
+604
+01:13:03,520 --> 01:13:11,200
+the chip readers that have this 48 pin sockets are more like 100 200 something that someone could
+
+605
+01:13:11,200 --> 01:13:18,880
+reasonably afford as a hobbyist so the adapters are designed to translate various chip pinouts to that
+
+606
+01:13:18,880 --> 01:13:28,720
+format um to add another layer to this many of the chips are multi-chip packages so they're combining
+
+607
+01:13:28,720 --> 01:13:37,440
+nor nand sram dram into one package with shared lines which makes it difficult to identify pin functions
+
+608
+01:13:37,440 --> 01:13:42,880
+or avoid conflicts without a data sheet but of course we don't have data sheets for a lot of these chips
+
+609
+01:13:42,880 --> 01:13:50,160
+so special care has to be taken with this with like the chip enable lines to prevent multiple dies from
+
+610
+01:13:50,160 --> 01:13:56,960
+outputting data simultaneously which is going to result in unreadable data and sometimes it's almost
+
+611
+01:13:56,960 --> 01:14:03,840
+unavoidable to deal with this if they happen to share the same there are some situations where so many things
+
+612
+01:14:03,840 --> 01:14:11,120
+are shared the data is just kind of garbled so cubus has had to dump multiple times and then we have to
+
+613
+01:14:11,120 --> 01:14:17,200
+piece the different parts of the dump together where some of it got garbled but some of it didn't and
+
+614
+01:14:17,200 --> 01:14:24,240
+then another one where a different part got garbled but the part garbled in the first one was clean
+
+615
+01:14:26,400 --> 01:14:34,240
+it reminds me of the floppy disk dumping that we do where we use flux technology and we you you can have
+
+616
+01:14:34,880 --> 01:14:45,120
+a floppy disk that is somewhat broken or damaged and you can copy uh the data from another of a uh another
+
+617
+01:14:45,120 --> 01:14:54,960
+copy of the same floppy disk so similar um mindset of preserving it there i love it piecing it together
+
+618
+01:14:54,960 --> 01:15:00,240
+and i haven't even i actually haven't finished the whole list of problems that occur when trying to dump
+
+619
+01:15:00,240 --> 01:15:08,320
+these phones another issue that comes up is with the budget chip readers themselves um most commercial
+
+620
+01:15:08,320 --> 01:15:16,160
+chip readers are limited by fixed reading algorithms and timing and so if the chip reader does not have
+
+621
+01:15:16,160 --> 01:15:23,680
+the algorithm that matches the chip you can't use it you just can't dump it so what happens in that case
+
+622
+01:15:23,680 --> 01:15:29,920
+well one of the things that cubus has been working on more recently is diy solutions using an arduino
+
+623
+01:15:30,880 --> 01:15:37,680
+to be able to read these chips they offer more flexibility but are slower and also require
+
+624
+01:15:37,680 --> 01:15:44,720
+additional components such as level shifters which sometimes need to be applied very carefully by hand
+
+625
+01:15:44,720 --> 01:15:45,520
+too many legs
+
+626
+01:15:48,080 --> 01:15:54,000
+and so ultimately the work requires a good deal of engineering effective work
+
+627
+01:15:54,000 --> 01:16:00,480
+and a very delicate handiwork to get a chance at extracting data
+
+628
+01:16:02,960 --> 01:16:12,160
+so one of the challenges that i don't think me or cubus expected when we went into dumping a lot of
+
+629
+01:16:12,160 --> 01:16:23,520
+these chips was a not a lot of support and feedback from other people knowledgeable in technical
+
+630
+01:16:23,520 --> 01:16:29,200
+engineering the way that conversations will usually go is we will talk about these chips how they are
+
+631
+01:16:29,200 --> 01:16:33,920
+proprietary how the data sheets don't exist so people and people say no they must exist they have
+
+632
+01:16:33,920 --> 01:16:39,120
+to exist like why would that not exist once we get past that point of proving yes this stuff is
+
+633
+01:16:39,120 --> 01:16:44,400
+isn't there they get to the point of well why are you wasting so much time trying to dump this very
+
+634
+01:16:44,400 --> 01:16:45,120
+obscure chip
+
+635
+01:16:48,240 --> 01:16:57,280
+what's the point i guess that's the way to i don't know um and so it's been difficult to recruit other
+
+636
+01:16:57,280 --> 01:17:03,760
+people who might have knowledge of this because there seem to be some some strange preconceptions
+
+637
+01:17:03,760 --> 01:17:13,120
+questions about the worth of a project that is this difficult um i think that in the conversation
+
+638
+01:17:13,120 --> 01:17:20,080
+that we're having here in this podcast the value of this is obvious we have been able to exploit
+
+639
+01:17:20,080 --> 01:17:26,560
+significantly more phones the usb directly because of many chip duns that was that was uh done by cubus
+
+640
+01:17:26,560 --> 01:17:35,120
+in order for exploits to be found you need a sample firmware a sample of the bootloader
+
+641
+01:17:36,080 --> 01:17:41,920
+so unless we have a chip dump we're going in completely blind and it's basically impossible to figure
+
+642
+01:17:41,920 --> 01:17:47,840
+out an exploit these chip dumps have allowed us to not go in blind we have been able to dump a wider variety
+
+643
+01:17:47,840 --> 01:17:55,280
+of phones we can now dump at least one phone from every single dokuma manufacturer at this point
+
+644
+01:17:56,400 --> 01:17:59,600
+we have a method for all of them which has been amazing
+
+645
+01:18:01,840 --> 01:18:07,200
+uh so i hope that there can be more interest and support in the hardware side
+
+646
+01:18:07,840 --> 01:18:11,600
+um well i hope that for everything the hacking side the hardware side there's just
+
+647
+01:18:11,600 --> 01:18:18,320
+it's that's a pretty small group of people who even know about all this stuff um but it's such a
+
+648
+01:18:18,320 --> 01:18:25,200
+fascinating and interesting challenge for people who might be wondering what they can do to use their
+
+649
+01:18:25,200 --> 01:18:33,680
+skills in a new and inventive manner for people who are looking to explore a realm where unlike a lot of
+
+650
+01:18:33,680 --> 01:18:41,280
+the other retro consoles the nintendo consoles the sega consoles sony uh etc etc it is really a lot of
+
+651
+01:18:41,280 --> 01:18:47,600
+unexplored technical territory and we are making new and amazing discoveries every day and i think
+
+652
+01:18:47,600 --> 01:18:53,920
+that's a good segue into what max is going to talk about with regards to the sideloading
+
+653
+01:18:56,480 --> 01:19:00,880
+yeah yeah definitely and i think the way you put it just before i go to sideloading i think the way
+
+654
+01:19:00,880 --> 01:19:06,800
+you stated that was really is really good because yeah it's not just against the the technical hurdles
+
+655
+01:19:06,800 --> 01:19:10,800
+right but it's also just a lot of preconceived notions against these games in general
+
+656
+01:19:10,800 --> 01:19:16,560
+because as we all know in the west flip phone games really were like snake you know people
+
+657
+01:19:16,560 --> 01:19:21,040
+always kind of stop at snake you know or really crappy flip phone games that run at like two frames
+
+658
+01:19:21,040 --> 01:19:27,040
+a second so when i so when you go up to somebody and say i'm preserving games on japanese flip phones
+
+659
+01:19:27,040 --> 01:19:30,960
+the first thing that comes to their mind is like oh it's snake it's crap it's not worth preserving
+
+660
+01:19:31,680 --> 01:19:37,360
+but well firstly all games deserve to be preserved obviously you know there's no i mean even the bad ones
+
+661
+01:19:37,360 --> 01:19:43,520
+right but it as we've seen in this podcast and the two previous ones there are so many gems on japanese
+
+662
+01:19:43,520 --> 01:19:48,320
+feature phones and all of them and there really were the precursors to modeled mobile games as we know
+
+663
+01:19:48,320 --> 01:19:53,760
+them especially in the way they were distributed they were distributed digitally a lot of them use the
+
+664
+01:19:53,760 --> 01:20:00,160
+subscription-based distribution models where new content was delivered monthly or sometimes weekly to
+
+665
+01:20:00,160 --> 01:20:06,640
+these games and that's not dissimilar from how server-reliant mobile games are today so in a sense
+
+666
+01:20:06,640 --> 01:20:12,320
+that these games are really like they're important in gaming history mobile gaming history at large
+
+667
+01:20:12,320 --> 01:20:16,880
+and that's why all of us here have been you know doing our best to raise awareness about these games so
+
+668
+01:20:16,880 --> 01:20:22,880
+i really do appreciate that point but back to what you were saying about side loading so the user xyz who
+
+669
+01:20:22,880 --> 01:20:29,360
+was the one who figured out this well he was he was one of two people who figured out this non-destructive
+
+670
+01:20:30,320 --> 01:20:37,040
+dumping method through this debug cable he figured out that on certain later devices i think it's like
+
+671
+01:20:37,040 --> 01:20:45,040
+the second to last panasonic imode phone ever created uh the p01f he discovered that with the debug cable
+
+672
+01:20:45,040 --> 01:20:51,600
+um obviously the specifics are above my head but he realized that you can side load um games onto this by
+
+673
+01:20:51,600 --> 01:20:56,480
+basically tricking the phone that it's a pre-installed application because on dokomo phones
+
+674
+01:20:56,480 --> 01:21:03,520
+in particular pre-installed apps and games don't require a sim card to run but if you have a paid
+
+675
+01:21:03,520 --> 01:21:08,640
+game you have to have the original sim card that you bought the game with or else the game refuses to
+
+676
+01:21:08,640 --> 01:21:14,080
+launch now of course when you run that through the dokomo sdk that verification is not there because
+
+677
+01:21:14,080 --> 01:21:19,040
+it's not on the phone but if you do want to play the game on the phone basically what xyz did was just
+
+678
+01:21:19,040 --> 01:21:24,800
+say okay for example i don't know rockman.exe fanta network i'm going to put it on the phone but the
+
+679
+01:21:24,800 --> 01:21:30,320
+phone's going to think it's pre-installed so it's not going to ask for that verification and in doing
+
+680
+01:21:30,320 --> 01:21:36,000
+so we were able to sideload games onto basically original hardware for the first time now there are
+
+681
+01:21:36,000 --> 01:21:41,200
+some limitations for some reason that there's no gyroscope inside of this which means that the motion
+
+682
+01:21:41,200 --> 01:21:47,360
+control games don't work they just kind of glitch out and it's possible to sideload games with sd card
+
+683
+01:21:47,360 --> 01:21:53,840
+data but it's it's kind of a convoluted process but it is possible but if there's one game that i
+
+684
+01:21:53,840 --> 01:21:58,240
+do want to highlight that's sideloadable and actually the the experience is elevated through
+
+685
+01:21:58,240 --> 01:22:04,720
+sideloading it it's a game that we preserved not even a week ago um is uh it's called real zero
+
+686
+01:22:04,720 --> 01:22:10,000
+another edition and real zero well zero the series is actually better known as fatal frame
+
+687
+01:22:10,880 --> 01:22:16,160
+actually no yeah yeah fatal frame yes and in the west and basically the whole thing about that
+
+688
+01:22:16,160 --> 01:22:20,160
+series is oh you have a camera and you take a picture of a ghost and ah scary ghost
+
+689
+01:22:20,160 --> 01:22:26,640
+you know so basically though they this is in 2004 they say wait a minute what if we made a game
+
+690
+01:22:26,640 --> 01:22:31,920
+for keitai that utilized the camera and you take a picture of an object and the ghost shows up and
+
+691
+01:22:31,920 --> 01:22:37,120
+then on like using the picture you took as the background you kind of immersively try to destroy
+
+692
+01:22:37,120 --> 01:22:43,440
+the ghost and that's exactly what we did we found a trial version of that and incubus preserved it
+
+693
+01:22:43,440 --> 01:22:52,160
+and from a chip dump mainly and basically what this this game does is um it looks for like a image
+
+694
+01:22:52,160 --> 01:22:56,800
+that's bright enough so i either for my for my demo i had to like point it out of like a light source
+
+695
+01:22:56,800 --> 01:23:02,400
+basically you know to make it be happy then the ghost shows up and then you you kill the ghost and
+
+696
+01:23:02,400 --> 01:23:07,440
+then it takes you to like a fake phone menu like they built a little mini phone menu inside there and
+
+697
+01:23:07,440 --> 01:23:12,640
+there are emails fake emails from the game and these emails are saying stuff like oh there are ghosts
+
+698
+01:23:12,640 --> 01:23:17,040
+around i'm so scared you know like i wonder what would happen if i took my camera out right now
+
+699
+01:23:17,040 --> 01:23:23,040
+dot dot dot you know but basically the demo ends at that point but there were 60 ghosts available for
+
+700
+01:23:23,040 --> 01:23:28,160
+that game and basically it's like that's an experience that you can you can play it through
+
+701
+01:23:28,160 --> 01:23:32,400
+the emulator you can select an image from your computer and load it but i think having it side
+
+702
+01:23:32,400 --> 01:23:36,880
+loadable and be able to take the picture yourself i think it's just a really cool experience
+
+703
+01:23:36,880 --> 01:23:43,840
+yeah and if i can add on to that like there are a bunch of these dojo phones that have you know
+
+704
+01:23:44,480 --> 01:23:53,280
+gyroscopes camera you know gps some of them have extra buttons other ones can detach and the sdk
+
+705
+01:23:53,280 --> 01:23:58,720
+emulator just can't do that so at least for scroll jamie i'm hoping to get all those kind of
+
+706
+01:23:59,360 --> 01:24:06,800
+control sets in because you know we have all those kind of controls now so it's just
+
+707
+01:24:07,360 --> 01:24:13,440
+the only way to like truly play those games is to sideload you know so
+
+708
+01:24:15,360 --> 01:24:23,360
+and i guess it's kind of like you have the eye toy and the wiimote you have those games that you're
+
+709
+01:24:23,360 --> 01:24:30,960
+never going to see on like the switch or something because like it uses that one thing that just
+
+710
+01:24:30,960 --> 01:24:34,560
+you know nothing ever uses
+
+711
+01:24:37,200 --> 01:24:43,360
+this is uh again i've said it many times during this podcast this is just amazing work by everyone
+
+712
+01:24:43,360 --> 01:24:51,040
+involved and i'm so so happy that you all took the time here today to talk about your your work your
+
+713
+01:24:51,040 --> 01:25:01,360
+progress your your chips your phones uh your javas uh your everything so we're gonna uh wrap up this
+
+714
+01:25:01,360 --> 01:25:09,920
+podcast here uh and as we do that i would like to invite you all to tell the audience tell our
+
+715
+01:25:09,920 --> 01:25:15,200
+listeners here where they can find you what you're looking to work on next and how people can help you
+
+716
+01:25:15,200 --> 01:25:22,640
+out in whatever endeavors that you're looking to uh continue on we can start with uh uv
+
+717
+01:25:24,960 --> 01:25:30,800
+yeah i appreciate it um i mean you can follow me blue sky twitter on uv app for both of those uh
+
+718
+01:25:30,800 --> 01:25:36,480
+or primarily just discord uh i mean the ktai wiki is the best way to probably get a hold of me um
+
+719
+01:25:36,480 --> 01:25:42,800
+primarily i mean if you need me for anything just mention me uh right now we're just doing a lot of
+
+720
+01:25:42,800 --> 01:25:47,520
+stuff with a new launcher not sure if everybody's aware of that but we've made it a lot easier for
+
+721
+01:25:47,520 --> 01:25:53,280
+people to play the games um so that definitely helps but doing some troubleshooting debugging and
+
+722
+01:25:53,280 --> 01:25:58,800
+so um great to be here thank you so much for inviting me especially as kind of being the new guy
+
+723
+01:25:58,800 --> 01:26:03,840
+here um it's been a it's been a thrill and a blast to be able to be a part of this journey so thanks
+
+724
+01:26:05,680 --> 01:26:15,920
+fantastic uh stephanie uh yeah so um i'm on blue sky as a zero shadow tail i'm also on mastodon
+
+725
+01:26:15,920 --> 01:26:26,480
+which is a zero shadow tail at chitter dot xyz because i'm squirrel so but i'm also in the ktai
+
+726
+01:26:26,480 --> 01:26:33,040
+wiki discord and there's also the squirrel jamie discord as well and there's an irc there's an irc channel
+
+727
+01:26:33,040 --> 01:26:45,680
+too if you like irc still but uh i'll be continuing working on basically the on nanocoat getting that
+
+728
+01:26:45,680 --> 01:26:52,960
+working getting that online and obviously you know they'll be testing things running things and you know
+
+729
+01:26:52,960 --> 01:27:06,720
+basically if you can break it then i can fix it but yeah thank you for having me here and it's been
+
+730
+01:27:06,720 --> 01:27:13,760
+you know really really great and i enjoyed it thank you thank you thank you ellen
+
+731
+01:27:13,760 --> 01:27:23,840
+so for me um there are a few things like uh like uh stephanie mentioned we have ktai wiki the ktai
+
+732
+01:27:23,840 --> 01:27:30,560
+wiki is a website and a wiki but we have a discord that is attached or associated with the wiki and
+
+733
+01:27:30,560 --> 01:27:36,400
+that's where a lot of the community is and that's where a lot of the brainstorming and invention
+
+734
+01:27:36,400 --> 01:27:42,320
+and reverse engineering is happening so that would be the best place for anyone interested
+
+735
+01:27:42,320 --> 01:27:49,440
+in japanese feature phones to go additionally i have some social media accounts under the username
+
+736
+01:27:49,440 --> 01:27:55,920
+unabandoned where where i post some content so i have unabandoned where on blue sky unabandoned where
+
+737
+01:27:55,920 --> 01:28:03,200
+on youtube and most recently unabandoned where on tiktok where i just shared a video of a panasonic
+
+738
+01:28:03,200 --> 01:28:11,040
+po1a that got over 500 000 views still blows my mind i don't know that's wild that's why it's a
+
+739
+01:28:11,040 --> 01:28:15,840
+very cool phone though if any of you happen to have a tiktok and want to see the video it is
+
+740
+01:28:16,560 --> 01:28:21,920
+it's a fascinating phone the hardware of these phones in addition to the software it was just amazing
+
+741
+01:28:24,880 --> 01:28:31,920
+awesome and last but not least max yeah so i'm not as cool as ellen i don't have a tiktok
+
+742
+01:28:31,920 --> 01:28:38,800
+despite being in the age demographic but i am on twitter and blue sky under uh my username rockman
+
+743
+01:28:38,800 --> 01:28:46,080
+cosmo i'm also on discord under the same username and yeah i mean if for future things i want to do
+
+744
+01:28:46,080 --> 01:28:51,280
+this year it really is just expanding you know the outreach raising more awareness and that's always
+
+745
+01:28:51,280 --> 01:28:58,240
+what i've been about so like i said in the past year in august i presented at an academic conference
+
+746
+01:28:58,240 --> 01:29:03,760
+but also at the strong museum of play on keita game preservation i like to say it was one of the
+
+747
+01:29:03,760 --> 01:29:08,640
+best four days of my life i got to meet jonas i got to meet ellen and it was just such a special
+
+748
+01:29:08,640 --> 01:29:13,520
+experience and i really got to see like how much interest there is in these games not just from game
+
+749
+01:29:13,520 --> 01:29:17,920
+preservationists but also academics because apparently this is an academic field that just
+
+750
+01:29:17,920 --> 01:29:21,120
+no one's discussing even the japanese themselves they're shocked that i care
+
+751
+01:29:21,120 --> 01:29:27,680
+so i am definitely gonna over the next year i'm probably gonna try to do more of those things and
+
+752
+01:29:27,680 --> 01:29:34,400
+maybe the next podcast a secret bigger project that might talk about but um but yeah other than that
+
+753
+01:29:34,400 --> 01:29:40,000
+if you do want to help out like ellen said yeah please go to keitaiwiki.com and join the discord
+
+754
+01:29:40,800 --> 01:29:45,600
+you don't have to be a technical mastermind to help us if you know of a lost keita game that does not
+
+755
+01:29:45,600 --> 01:29:51,200
+have an entry on keitai wiki yet which there are a lot then feel free to make an entry there and yeah
+
+756
+01:29:51,760 --> 01:29:56,960
+basically to just yeah please help us out and once again thank you so much jonas and hit save for
+
+757
+01:29:56,960 --> 01:30:04,160
+having us on really appreciate it thank you max and again thank you everyone for being on the show today
+
+758
+01:30:05,120 --> 01:30:11,440
+this is super fun i love doing this and i look forward to more of these updates as you continue to
+
+759
+01:30:11,440 --> 01:30:18,960
+progress i want to say thank you to all our listeners and if you want to reach out to anyone
+
+760
+01:30:18,960 --> 01:30:24,480
+here of course reach out to them immediately directly on the keita wiki and you can also stop
+
+761
+01:30:24,480 --> 01:30:31,120
+by the hit save discord and chat with us there thank you all and have a fantastic rest of your day
+
+762
+01:30:31,120 --> 01:30:36,640
+see you next time bye bye
+
